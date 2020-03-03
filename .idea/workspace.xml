@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="Test">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/bgimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/linkbutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/arevolutioninperformance.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/createthespaceyouwant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/customers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/donw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/drawitwhiteboarddemobanner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/everythingyouneed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/herow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/landingpagephoto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/thinkerw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pastcustomers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +69,7 @@
       <workItem from="1582929730003" duration="677000" />
       <workItem from="1582930499241" duration="1699000" />
       <workItem from="1583161810888" duration="425000" />
-      <workItem from="1583162261835" duration="26949000" />
+      <workItem from="1583162261835" duration="27118000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1582930077732</created>
@@ -105,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582930077732</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Mar 2nd: Images, Fonts, Layout Start">
+      <created>1583193592460</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583193592460</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +97,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Mar 2nd: Images, Fonts, Layout Start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mar 2nd: Images, Fonts, Layout Start" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1583193591382">
