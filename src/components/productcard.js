@@ -36,6 +36,7 @@ const ProductCard = (props) => {
         <h5
             css={css`
                   grid-area: subheading;
+                  margin-top: 0;
                 `}
         >
             {props.subheading}
@@ -43,6 +44,7 @@ const ProductCard = (props) => {
         <h4
             css={css`
                   grid-area: price;
+                  color: var(--brand-color);
                 `}
         >
             {props.price}

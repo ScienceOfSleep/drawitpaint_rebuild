@@ -6,10 +6,12 @@ import {graphql} from "gatsby";
 import LinkButton from "../components/linkbutton";
 import BgImage from "../components/bgimage";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 
 const PastCustomers = ({data}) => (
     <Layout>
+        <SEO title="Customers"/>
         {/*LANDING SHOT*/}
         <section
             css={css`
