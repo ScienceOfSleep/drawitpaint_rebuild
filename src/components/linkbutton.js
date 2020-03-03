@@ -6,6 +6,7 @@ import { css } from "@emotion/core"
 
 const StyledLink = styled(Link)`
   color: ${props => props.fontColor || '#ffffff'};
+  margin-top: ${props => props.marginTop || 'inherit'};
   text-decoration: none;
   background-color: #dd4c1b;
   border-radius: .75em;
@@ -18,12 +19,12 @@ const StyledLink = styled(Link)`
   &:hover, &:focus{
     background-color: #417fb9;
   }
-`
+`;
 
 const LinkButton = props => (
     <StyledLink>
         {props.content}
     </StyledLink>
-)
+);
 
 export default LinkButton

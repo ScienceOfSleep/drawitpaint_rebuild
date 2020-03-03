@@ -56,12 +56,12 @@ const Header = () => (
         >
             <ul css={css`padding-left: 0`}>
                 <ListLink to="/">Home</ListLink>
-                <ListLink to="#">Features</ListLink>
+                <ListLink to="/features">Features</ListLink>
                 <ListLink to="/pastcustomers">Past Customers</ListLink>
                 <ListLink to="/shop">Shop</ListLink>
-                <ListLink to="#">Blog</ListLink>
-                <ListLink to="#">Cart</ListLink>
-                <ListLink to="#">Contact</ListLink>
+                <ListLink to="/blog">Blog</ListLink>
+                <ListLink to="/cart">Cart</ListLink>
+                <ListLink to="/contact">Contact</ListLink>
             </ul>
         </nav>
     </header>

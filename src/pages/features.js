@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
 
-const Shop = () => (
+const Features = () => (
     <Layout>
         <h1>hi</h1>
     </Layout>
 );
 
-export default Shop
+export default Features
