@@ -37,22 +37,21 @@ const IndexPage = ({data}) => (
                   grid-area: mainTitle;
                   display: flex;
                   flex-flow: column nowrap;
-                  margin-bottom: 7rem;
+                  justify-content: flex-end;
                 `}
             >
                 <h1
                     css={css`
-                      margin: auto;
+                      margin: auto auto 0;
                       color: #ffffff;
-                      padding-top: 4rem;
-                      padding-bottom: 6rem;
+                      padding-top: 5rem;
                     `}
                 >
                     Every Possibility
                 </h1>
                 <h2
                     css={css`
-                      margin: auto;
+                      margin: 0.5rem auto auto;
                       color: #ffffff;
                     `}
                 >
