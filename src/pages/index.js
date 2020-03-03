@@ -504,63 +504,63 @@ export const query = graphql`
         customers: file(relativePath: { eq: "customers.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         revolution: file(relativePath: { eq: "arevolutioninperformance.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         spaceyouwant: file(relativePath: { eq: "createthespaceyouwant.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         donw: file(relativePath: { eq: "donw.jpg" }) {
             childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
+                fluid(maxWidth: 365) {
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         whiteboardbanner: file(relativePath: { eq: "drawitwhiteboarddemobanner.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         everything: file(relativePath: { eq: "everythingyouneed.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         herow: file(relativePath: { eq: "herow.jpg" }) {
             childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
+                fluid(maxWidth: 365) {
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         landingpage: file(relativePath: { eq: "landingpagephoto.jpg" }) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
         thinkerw: file(relativePath: { eq: "thinkerw.jpg" }) {
             childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
+                fluid(maxWidth: 365) {
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }

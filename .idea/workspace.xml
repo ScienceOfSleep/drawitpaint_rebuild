@@ -75,7 +75,7 @@
       <workItem from="1583162261835" duration="27118000" />
       <workItem from="1583248557560" duration="142000" />
       <workItem from="1583248727165" duration="28000" />
-      <workItem from="1583248804734" duration="16849000" />
+      <workItem from="1583248804734" duration="17649000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1582930077732</created>
@@ -98,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583268803139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Landing tweaks">
+      <created>1583269753423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583269753423</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +120,8 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Mar 2nd: Images, Fonts, Layout Start" />
     <MESSAGE value="Index Grid rough draft done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index Grid rough draft done" />
+    <MESSAGE value="Landing tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Landing tweaks" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -121,10 +129,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="281" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1583248698747" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583268801999">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583269752543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583268801999" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583269752543" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1583173881112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -163,7 +171,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/index.js</url>
-          <line>499</line>
+          <line>498</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
