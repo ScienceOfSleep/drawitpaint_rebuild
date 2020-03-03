@@ -1,12 +1,13 @@
 import React from "react"
-import { graphql } from "gatsby"
-import { css } from "@emotion/core"
+import {graphql, Link} from "gatsby"
+import {css} from "@emotion/core"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import BgImage from "../components/bgimage";
+import ProductCard from "../components/productcard";
 
 import LinkButton from "../components/linkbutton";
 
@@ -36,14 +37,15 @@ const IndexPage = ({data}) => (
                   grid-area: mainTitle;
                   display: flex;
                   flex-flow: column nowrap;
-                  margin-bottom: 175px;
+                  margin-bottom: 7rem;
                 `}
             >
                 <h1
                     css={css`
                       margin: auto;
                       color: #ffffff;
-                      padding-bottom: .75em;
+                      padding-top: 4rem;
+                      padding-bottom: 6rem;
                     `}
                 >
                     Every Possibility
@@ -67,11 +69,9 @@ const IndexPage = ({data}) => (
 
         <main
             css={css`
-          margin: auto;
-          max-width: 1120px;
-          padding-top: 1rem;
         `}
         >
+            {/*EVERYTHING YOU NEED*/}
             <section
                 css={css`
                 display: grid;
@@ -81,41 +81,43 @@ const IndexPage = ({data}) => (
                 "para pic"
                 ;
                 grid-template-rows: 1fr 1fr;
+                padding-top: 2.5rem;
+                max-width: 1120px;
+                margin: auto;
             `}
             >
-
-
                 <h3
                     css={css`
-          grid-area: heading;
-        `}
+                          grid-area: heading;
+                        `}
                 >
                     Everything You Need
                 </h3>
                 <h4
                     css={css`
-          grid-area: subheading;
-        `}
+                          grid-area: subheading;
+                        `}
                 >
                     Draw It Paint is an example of the belief that the details are not details; they make the product.
                 </h4>
                 <p
                     css={css`
-          grid-area: para;
-        `}
+                          grid-area: para;
+                        `}
                 >
                     Generously sized at 100 square feet or more, Draw It Paint features the highest quality materials to fit your needs. Our nine robust formulas can be applied directly onto ANY smooth surface for a smoother and flawless modern finish. Finely formulated options for your thinkspace in a professional, commercial or industrial capacity and performance beyond the leading brand in paint and surpassing traditional porcelain-steel and glass dry erase. Now available in new performance and color options.
                 </p>
                 <Img
                     fluid={data.everything.childImageSharp.fluid}
                     css={css`
-                grid-area: pic;
-                width: 500px;
-                margin-left: 1rem;
-              `}
+                            grid-area: pic;
+                            width: 500px;
+                            margin-left: 4rem;
+                          `}
                 />
             </section>
 
+            {/*REVOLUTION*/}
             <section
                 css={css`
                 display: grid;
@@ -124,12 +126,16 @@ const IndexPage = ({data}) => (
                 "pic para"
                 ;
                 grid-template-rows: 1fr 1fr;
+                padding-top: 4rem;
+                max-width: 1120px;
+                margin: auto;
             `}
             >
                 <h3
                     css={css`
-                    grid-area: heading;
-                  `}
+                            grid-area: heading;
+                            padding-top: 3rem;
+                          `}
                 >
                     A Revolution in Performance
                 </h3>
@@ -143,27 +149,33 @@ const IndexPage = ({data}) => (
                 <Img
                     fluid={data.revolution.childImageSharp.fluid}
                     css={css`
-                grid-area: pic;
-                width: 500px;
-                margin-right: 1rem;
-              `}
+                            grid-area: pic;
+                            width: 500px;
+                            margin-right: 7rem;
+                          `}
                 />
             </section>
 
+            {/*FEATURES*/}
             <section
                 css={css`
                 display: grid;
                 grid-template-areas: 
                 "heading1 heading1 heading2 heading2"
                 "para1 para1 para2 para2"
-                ". linkButton linkButton ."
+                ". buttonLink buttonLink ."
                 ;
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: 1fr 1fr auto;
+                grid-template-columns: 1fr auto auto 1fr;
+                padding-top: 3rem;
+                max-width: 1120px;
+                margin: auto;
             `}
             >
                 <h3
                     css={css`
                     grid-area: heading1;
+                    padding-right: 2rem;
                   `}
                 >
                     Distinctive Modern Look
@@ -171,6 +183,7 @@ const IndexPage = ({data}) => (
                 <p
                     css={css`
                     grid-area: para1;
+                    padding-right: 2rem;
                   `}
                 >
                     A sophisticated Self-Leveling and Self-Smoothing paint offers a clean, distinct, glass-like dry erase surface well-suited to a variety of modern businesses and workspaces.
@@ -178,6 +191,7 @@ const IndexPage = ({data}) => (
                 <h3
                     css={css`
                     grid-area: heading2;
+                    padding-left: 4rem;
                   `}
                 >
                     Effortless For Everyone
@@ -185,34 +199,124 @@ const IndexPage = ({data}) => (
                 <p
                     css={css`
                     grid-area: para2;
+                    padding-left: 4rem;
+                    padding-bottom: 4rem;
                   `}
                 >
-                    Paint that work as hard as you. Simply Shake, Mix, and Roll for a professional glass-like finish. These are just some of the ways we make dry erase better for people.
+                    Paint that work as hard as you. Simply Shake, Mix, and Roll for a professional glass-like finish.
+                    These are just some of the ways we make dry erase better for people.
                 </p>
-                <LinkButton
-                    to="index"
-                    content="Learn More"
-                    css={css`
-                    grid-area: linkButton;  
-                  `}
-                />
+                <LinkButton to="index" content="Learn More"/>
             </section>
 
-            <h3>Complete Dry Erase Selection</h3>
-            <h4>Recruit: The Thinker</h4>
-            <p>For heavy usage in a medium sized business.</p>
-            <h4>Unique: The Hero</h4>
-            <p>For heavy usage in a business or warehouse setting.</p>
-            <h4>Limitless: The Don</h4>
-            <div>
-                <Img fluid={data.thinkerw.childImageSharp.fluid}/>
-                <Img fluid={data.herow.childImageSharp.fluid}/>
-                <Img fluid={data.donw.childImageSharp.fluid}/>
-            </div>
-            <LinkButton to="shop" content="Shop All Our Products"/>
+            {/*PRODUCT PREVIEW*/}
+            <section
+                css={css`
+                display: grid;
+                grid-template-areas: 
+                "heading subheading1"
+                "heading para1"
+                "heading subheading2"
+                "heading para2"
+                ". subheading3"
+                ". para3"
+                ;
+                padding-top: 5rem;
+                max-width: 1120px;
+                margin: auto;
+            `}
+            >
+                <h3
+                    css={css`
+                    grid-area: heading;
+                  `}
+                >
+                    Complete Dry Erase Selection
+                </h3>
+                <h4
+                    css={css`
+                    grid-area: subheading1;
+                    color: var(--brand-color);
+                  `}
+                >
+                    Recruit: The Thinker
+                </h4>
+                <p
+                    css={css`
+                    grid-area: para1;
+                    margin-top: 0;
+                  `}
+                >
+                    For heavy usage in a medium sized business.
+                </p>
+                <h4
+                    css={css`
+                    grid-area: subheading2;
+                    color: var(--brand-color);
+                  `}
+                >
+                    Unique: The Hero
+                </h4>
+                <p
+                    css={css`
+                    grid-area: para2;
+                    margin-top: 0;
+                  `}
+                >
+                    For heavy usage in a business or warehouse setting.
+                </p>
+                <h4
+                    css={css`
+                    grid-area: subheading3;
+                    color: var(--brand-color);
+                  `}
+                >
+                    Limitless: The Don
+                </h4>
+                <p
+                    css={css`
+                    grid-area: para3;
+                    margin-top: 0;
+                  `}
+                >
+                    For heavy usage in large facilities with exposure to chemicals.
+                </p>
+            </section>
+            <section
+                css={css`
+                      display: grid;
+                      grid-template-areas:
+                      "card1 card2 card3"
+                      ;
+                      grid-template-columns: 1fr 1fr 1fr;
+                      padding-top: 2rem;
+                      max-width: 1120px;
+                      margin: auto;
+                    `}
+            >
+                <ProductCard heading="Recruit: The Thinker" subheading="White" price="$445"
+                             fluid={data.thinkerw.childImageSharp.fluid} area="card1"/>
+                <ProductCard heading="Unique: The Hero" subheading="White" price="$745"
+                             fluid={data.herow.childImageSharp.fluid} area="card2"/>
+                <ProductCard heading="Limitless: The Don" subheading="White" price="$1045"
+                             fluid={data.donw.childImageSharp.fluid} area="card3"/>
+            </section>
 
+            <nav
+                css={css`
+                      display: flex;
+                      justify-content: center;
+                      padding-top: 1rem;
+                      padding-bottom: 2.5rem;
+                    `}
+            >
+                <LinkButton to="shop" content="Shop All Our Products"/>
+            </nav>
+
+            {/*WHITEBOARD BANNER*/}
             <Img fluid={data.whiteboardbanner.childImageSharp.fluid}/>
 
+            {/*CREATE THE EXACT SPACE YOU WANT*/}
             <section
                 css={css`
                 display: grid;
@@ -221,6 +325,9 @@ const IndexPage = ({data}) => (
                 "pic para"
                 ;
                 grid-template-rows: 1fr 1fr;
+                padding-top: 8rem;
+                max-width: 1120px;
+                margin: auto;
             `}
             >
                 <h3
@@ -247,23 +354,151 @@ const IndexPage = ({data}) => (
                 />
             </section>
 
-            <h3>Some Of Our Past Customers</h3>
-            <Img fluid={data.customers.childImageSharp.fluid}/>
-            <LinkButton to="pastcustomers" content="See More"/>
-
-            <h3>An Aesthetic All Its Own</h3>
-            <h4>With a modern and distinct glass-like finish.</h4>
-            <p>
-                It’s no wonder it has been added to the idea generation hubs of many business professionals, manufacturers, and researchers across America.
-            </p>
-            <LinkButton to="shop" content="Get Dry Erase Paint Now"/>
-            <h3>Keep In Touch</h3>
-            <p>hello@drawitpaint.com</p>
-            <p>+1 855-437-2948</p>
-            <LinkButton to="index" content="Contact Us"/>
+            {/*PAST CUSTOMERS*/}
+            <section
+                css={css`
+                  padding-top: 8rem;
+                  max-width: 1120px;
+                  margin: auto;
+                `}
+            >
+                <h3>Some Of Our Past Customers</h3>
+                <Img fluid={data.customers.childImageSharp.fluid}/>
+                <nav
+                    css={css`
+                          display: flex;
+                          justify-content: center;
+                        `}
+                >
+                    <LinkButton to="pastcustomers" content="Learn More"/>
+                </nav>
+            </section>
         </main>
+
+        {/*BLUE AND WHITE BAR*/}
+        <section
+            css={css`
+                background-color: var(--alt-brand-color);
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                `}
+        >
+            <section
+                css={css`
+                display: grid;
+                grid-template-areas: 
+                "copy copy ."
+                "copy copy buttonLink"
+                "copy copy ."
+                ;
+                grid-template-rows: 1fr auto 1fr;
+                max-width: 1120px;
+                margin: auto;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            `}
+            >
+                <section
+                    css={css`
+                      grid-area: copy;
+                      display: flex;
+                      flex-flow: column nowrap;
+                    `}
+                >
+                    <h3
+                        css={css`
+                    grid-area: heading;
+                    color: #ffffff;
+                    font-size: 36px;
+                    font-weight: 300;
+                  `}
+                    >
+                        An Aesthetic All Its Own
+                    </h3>
+                    <h4
+                        css={css`
+                          grid-area: subheading;
+                          color: #ffffff;
+                          margin-top: 0;
+                        `}
+                    >
+                        With a modern and distinct glass-like finish.
+                    </h4>
+                    <p
+                        css={css`
+                    grid-area: para;
+                    color: #ffffff;
+                    margin-top: 0;
+                  `}
+                    >
+                        It’s no wonder it has been added to the idea generation hubs of many business professionals,
+                        manufacturers, and researchers across America.
+                    </p></section>
+                <Link
+                    to="shop"
+                    css={css`
+                            text-decoration: none;
+                            background-color: var(--alt-brand-color);
+                            color: #ffffff;
+                            border: solid 2px #ffffff;
+                            border-radius: .75em;
+                            padding: .8em 1.25em;
+                            cursor: pointer;
+                            font-weight: 700;
+                            font-size: 15px;
+                            letter-spacing: 2px;
+                            grid-area: buttonLink;
+                            &:hover, &:focus{
+                              background-color: #ffffff;
+                              color: #000000;
+                        `}
+                >
+                    Get Dry Erase Paint Now
+                </Link>
+            </section>
+        </section>
+
+        {/*CONTACT*/}
+        <section
+            css={css`
+                display: grid;
+                grid-template-areas: 
+                ". heading heading heading ."
+                ". subheading subheading subheading ."
+                ". para para para ."
+                ". . buttonLink . ."
+                ;
+                grid-template-columns: 1fr 1fr auto 1fr 1fr;
+            `}
+        >
+            <h3
+                css={css`
+                    grid-area: heading;
+                    margin: auto;
+                  `}
+            >
+                Keep In Touch
+            </h3>
+            <p
+                css={css`
+                      grid-area: subheading;
+                      margin: auto;
+                    `}
+            >
+                hello@drawitpaint.com
+            </p>
+            <p
+                css={css`
+                    grid-area: para;
+                    margin: auto;
+                  `}
+            >
+                +1 855-437-2948
+            </p>
+            <LinkButton to="index" content="Contact Us"/>
+        </section>
     </Layout>
-)
+);
 
 export const query = graphql`
     query {
@@ -331,6 +566,6 @@ export const query = graphql`
             }
         }
     }
-`
+`;
 
 export default IndexPage
