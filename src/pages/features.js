@@ -6,7 +6,6 @@ import Img from "gatsby-image";
 import {graphql} from "gatsby";
 import BgImage from "../components/bgimage";
 import LinkButton from "../components/linkbutton";
-import ProductCard from "../components/productcard";
 
 const Features = ({data}) => (
     <Layout>
@@ -35,8 +34,13 @@ const Features = ({data}) => (
                       color: #ffffff;
                       padding-top: 5rem;
                       grid-area: mainTitle;
-                      font-size: 72px;
                       text-align: center;
+                      font-size: 3rem;
+                      padding-bottom: 1.5rem;
+                      @media only screen and (min-width: 1120px) {
+                      padding-bottom: 0;
+                      font-size: 72px;
+                      }
                     `}
             >
                 Innovation In Our Lab. <br/> Performance In Your World
@@ -53,26 +57,35 @@ const Features = ({data}) => (
         <section
             css={css`
                 display: grid;
+                grid-template-areas:
+                "pic"
+                "heading"
+                "para"
+                ;
+                padding-top: 2.5rem;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
                 grid-template-areas: 
                 "heading pic"
                 "para pic"
                 ;
-                padding-top: 2.5rem;
                 max-width: 1120px;
                 margin: auto;
+                }
             `}
         >
             <h3
                 css={css`
-                          grid-area: heading;
-                        `}
+                      grid-area: heading;
+                    `}
             >
                 Technology ahead of the curve
             </h3>
             <p
                 css={css`
-                          grid-area: para;
-                        `}
+                      grid-area: para;
+                    `}
             >
                 Our manufacturing facilities and experience in specialty paint production has shaped the development of
                 our forward-thinking features. With over 18 years of development for our 3 dry erase formulas, you can
@@ -81,30 +94,46 @@ const Features = ({data}) => (
             <Img
                 fluid={data.curve.childImageSharp.fluid}
                 css={css`
-                            grid-area: pic;
-                            width: 500px;
-                            margin-left: 4rem;
-                          `}
+                      grid-area: pic;
+                      @media only screen and (min-width: 1120px) {
+                        width: 500px;
+                        margin-left: 4rem;
+                      }
+                    `}
             />
         </section>
 
         <section
             css={css`
                 display: grid;
+                grid-template-areas:
+                "pic"
+                "para"
+                ;
+                padding-top: 4rem;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                padding-left: .5rem;
+                padding-right: .5rem;
                 grid-template-areas: 
                 "pic ."
                 "pic para"
                 "pic ."
                 ;
                 grid-template-rows: 1fr auto 1fr;
-                padding-top: 4rem;
                 max-width: 1120px;
                 margin: auto;
+                }
             `}
         >
             <p
                 css={css`
                     grid-area: para;
+                    padding-top: .5rem;
+                    @media only screen and (min-width: 1120px) {
+                    padding-top: 0;
+                    }
                   `}
             >
                 Uniquely designed to surpass all paints, traditional porcelain-steel, and glass dry erase options, we
@@ -115,8 +144,10 @@ const Features = ({data}) => (
                 fluid={data.curve2.childImageSharp.fluid}
                 css={css`
                             grid-area: pic;
-                            width: 500px;
-                            margin-right: 7rem;
+                            @media only screen and (min-width: 1120px) {
+                              width: 500px;
+                              margin-right: 7rem;
+                            }
                           `}
             />
         </section>
@@ -131,15 +162,21 @@ const Features = ({data}) => (
         >
             <section
                 css={css`
-                max-width: 1120px;
-                margin: auto;
+                padding-top: 2rem;
                 display: grid;
                 grid-template-areas:
-                ". heading ."
-                "para para para"
-                ;
-                grid-template-columns: 1fr auto 1fr;
-                padding-top: 2rem;
+                  ". heading ."
+                  "para para para"
+                  ;
+                  grid-template-columns: 1fr auto 1fr;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                  padding-right: 0;
+                  padding-left: 0;
+                  max-width: 1120px;
+                  margin: auto;
+                }
             `}
             >
                 <h3
@@ -155,9 +192,13 @@ const Features = ({data}) => (
                     css={css`
                             grid-area: para;
                             color: #ffffff;
-                            max-width: 500px;
                             margin: auto;
                             text-align: center;
+                            padding-top: 1rem;
+                            @media only screen and (min-width: 1120px) {
+                              max-width: 500px;
+                              padding-top: 0;
+                            }
                           `}
                 >
                     A performance selection that continue to deliver an elevated experience of productivity and helps
@@ -168,18 +209,32 @@ const Features = ({data}) => (
             {/*White Icons*/}
             <section
                 css={css`
-                max-width: 1120px;
-                margin: auto;
                 display: grid;
                 grid-template-areas:
-                ". icon1 . icon2 . icon3 ."
-                ". heading1 . heading2 . heading3 ."
-                ". para1 . para2 . para3 ."
+                ". icon1 ."
+                "heading1 heading1 heading1"
+                "para1 para1 para1"
+                ". icon2 ."
+                "heading2 heading2 heading2"
+                "para2 para2 para2"
+                ". icon3 ."
+                "heading3 heading3 heading3"
+                "para3 para3 para3"
                 ;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                  grid-template-areas:
+                  ". icon1 . icon2 . icon3 ."
+                  ". heading1 . heading2 . heading3 ."
+                  ". para1 . para2 . para3 ."
+                  ;               
                 grid-template-columns: 1fr 210px 1fr 210px 1fr 210px 1fr;
                 grid-template-rows: 180px auto 1fr;
-                padding-top: 2rem;
-                padding-bottom: 3rem;
+                padding: 2rem 0 3rem;
+                max-width: 1120px;
+                margin: auto;
+                }
             `}
             >
                 {/*1*/}
@@ -297,10 +352,22 @@ const Features = ({data}) => (
                   margin: auto;
                   display: grid;
                   grid-template-areas:
-                  "icon1 . icon2 . icon3 . icon4"
-                  "icon5 . icon6 . icon7 . icon8"
+                  "icon1"
+                  "icon2"
+                  "icon3"
+                  "icon4"
+                  "icon5"
+                  "icon6"
+                  "icon7"
+                  "icon8"
                   ;
-                  grid-template-columns: auto 1rem auto 1rem auto 1rem auto;
+                  @media only screen and (min-width: 1120px) {
+                    grid-template-areas:
+                    "icon1 . icon2 . icon3 . icon4"
+                    "icon5 . icon6 . icon7 . icon8"
+                    ;
+                    grid-template-columns: auto 1rem auto 1rem auto 1rem auto;
+                  }
                 `}
         >
             {/*1*/}
