@@ -5,14 +5,16 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useEffect, useRef, useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core";
 
 import Header from "./header"
+import ContactForm from "./contactform";
 
 const Layout = ({ children }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -114,9 +116,6 @@ const Layout = ({ children }) => {
         li{
         margin-top: 0.25rem;
         }
-
-
-
 `}/>
         <Header/>
         <div>
@@ -125,6 +124,7 @@ const Layout = ({ children }) => {
                 © {new Date().getFullYear()}, Built with
                 {` `}
                 <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <ContactForm/>
             </footer>
         </div>
     </>

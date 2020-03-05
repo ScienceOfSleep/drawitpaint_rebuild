@@ -1,20 +1,21 @@
-import React from "react"
+import React, {useEffect, useRef, useState} from "react"
 import {graphql, Link} from "gatsby"
 import {css} from "@emotion/core"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import BgImage from "../components/bgimage";
 import ProductCard from "../components/productcard";
 
 import LinkButton from "../components/linkbutton";
 
+
 const IndexPage = ({data}) => (
+
+
     <Layout>
         <SEO title="Home" />
-
 
         <section
             css={css`
@@ -385,6 +386,7 @@ const IndexPage = ({data}) => (
                           grid-template-areas:
                           "card1 card2 card3"
                           ;
+                          grid-template-columns: 1fr 1fr 1fr;
                           max-width: 1120px;
                           margin: auto;
                         }
@@ -513,6 +515,7 @@ const IndexPage = ({data}) => (
                   "copy copy buttonLink"
                   "copy copy ."
                   ;
+                  grid-template-columns: 1fr 1fr auto;
                   grid-template-rows: 1fr auto 1fr;
                   max-width: 1120px;
                   margin: auto;

@@ -371,7 +371,7 @@ const Features = ({data}) => (
                     "icon1 . icon2 . icon3 . icon4"
                     "icon5 . icon6 . icon7 . icon8"
                     ;
-                    grid-template-columns: auto 1rem auto 1rem auto 1rem auto;
+                    grid-template-columns: auto 2rem auto 2rem auto 2rem auto;
                   }
                 `}
         >
@@ -392,6 +392,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Emulsification Process
@@ -400,9 +401,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     Fusing of coats for the smoothest surface possible
@@ -426,6 +424,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Self Levelling/ Self Smoothing
@@ -434,9 +433,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     Adjusts to the surface, correcting minor imperfections and textures for you
@@ -460,6 +456,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Abrasion Resistance
@@ -468,9 +465,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     If it doesn’t break the wall, it won’t break our paint
@@ -494,6 +488,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Chemical Resistance
@@ -502,9 +497,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     Wipe harsh chemicals off just as easily as you do with marker marks
@@ -528,6 +520,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Simple Maintenance
@@ -536,9 +529,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     Wipe away with ease without chemicals or spray cleaners
@@ -561,6 +551,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Pinpoint Clarity
@@ -569,9 +560,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     UVForceTM & ColorHDTM pigments for vibrancy & contrast
@@ -594,6 +582,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     Endurance Tested
@@ -602,9 +591,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     Made for durability with UltraStrengthTM & StrongAdhesionTM
@@ -627,6 +613,7 @@ const Features = ({data}) => (
                 <h4
                     css={css`
                           grid-area: heading;
+                          text-align: center;
                         `}
                 >
                     True Connection
@@ -635,9 +622,6 @@ const Features = ({data}) => (
                     css={css`
                           grid-area: para;
                           text-align: center;
-                          @media only screen and (min-width: 1120px) {
-                            text-align: left;
-                          }
                         `}
                 >
                     Fusing of coats for the smoothest surface possible
