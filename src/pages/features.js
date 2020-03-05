@@ -158,6 +158,7 @@ const Features = ({data}) => (
                 background-color: var(--alt-brand-color);
                 margin-top: 3rem;
                 margin-bottom: 3rem;
+                padding-bottom: 2rem;
                 `}
         >
             <section
@@ -361,7 +362,11 @@ const Features = ({data}) => (
                   "icon7"
                   "icon8"
                   ;
+                  padding-left: .5rem;
+                  padding-right: .5rem;
                   @media only screen and (min-width: 1120px) {
+                  padding-left: 0;
+                  padding-right: 0;
                     grid-template-areas:
                     "icon1 . icon2 . icon3 . icon4"
                     "icon5 . icon6 . icon7 . icon8"
@@ -376,9 +381,9 @@ const Features = ({data}) => (
                       grid-area: icon1;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -394,6 +399,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     Fusing of coats for the smoothest surface possible
@@ -406,9 +415,9 @@ const Features = ({data}) => (
                       grid-area: icon2;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -424,6 +433,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     Adjusts to the surface, correcting minor imperfections and textures for you
@@ -436,9 +449,9 @@ const Features = ({data}) => (
                       grid-area: icon3;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -454,6 +467,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     If it doesn’t break the wall, it won’t break our paint
@@ -466,9 +483,9 @@ const Features = ({data}) => (
                       grid-area: icon4;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -484,6 +501,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     Wipe harsh chemicals off just as easily as you do with marker marks
@@ -496,9 +517,9 @@ const Features = ({data}) => (
                       grid-area: icon5;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -514,6 +535,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     Wipe away with ease without chemicals or spray cleaners
@@ -525,9 +550,9 @@ const Features = ({data}) => (
                       grid-area: icon6;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -543,6 +568,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     UVForceTM & ColorHDTM pigments for vibrancy & contrast
@@ -554,9 +583,9 @@ const Features = ({data}) => (
                       grid-area: icon7;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -572,6 +601,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     Made for durability with UltraStrengthTM & StrongAdhesionTM
@@ -583,9 +616,9 @@ const Features = ({data}) => (
                       grid-area: icon8;
                       display: grid;
                       grid-template-areas:
-                      "icon"
-                      "heading"
-                      "para"
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
                       ;
                       grid-template-rows: 140px auto 1fr;
                     `}
@@ -601,6 +634,10 @@ const Features = ({data}) => (
                 <p
                     css={css`
                           grid-area: para;
+                          text-align: center;
+                          @media only screen and (min-width: 1120px) {
+                            text-align: left;
+                          }
                         `}
                 >
                     Fusing of coats for the smoothest surface possible
