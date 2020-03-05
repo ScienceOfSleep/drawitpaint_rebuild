@@ -34,6 +34,7 @@ const PastCustomers = ({data}) => (
                       margin: auto auto 0;
                       color: #ffffff;
                       padding-top: 5rem;
+                      text-align: center;
                       grid-area: mainTitle;
                     `}
             >
@@ -50,15 +51,20 @@ const PastCustomers = ({data}) => (
         {/*COPY*/}
         <section
             css={css`
-              display: flex;
-              max-width: 1120px;
-              margin: 5rem auto auto;
+              padding: 2rem .5rem;
+              @media only screen and (min-width: 1120px) {
+                display: flex;
+                max-width: 1120px;
+                margin: 5rem auto auto;
+                }
             `}
         >
             <p
                 css={css`
-                  margin-right: 5rem;
-                  font-size: 20px;
+                font-size: 20px;
+                @media only screen and (min-width: 1120px) {
+                    margin-right: 5rem;
+                  }
                 `}
             >
                 We have a dry erase paint for every surface, setting and industry, because we believe your creativity
@@ -69,8 +75,14 @@ const PastCustomers = ({data}) => (
                 css={css`
                   font-size: 20px;
                   font-weight: bold;
-                  border-left: solid 2px #000000;
-                  padding-left: 1rem;
+                  border-top: 2px solid #000000;
+                  margin-top: 2rem;
+                  @media only screen and (min-width: 1120px) {
+                    margin-top: inherit;
+                    border-top: 0;
+                    border-left: solid 2px #000000;
+                    padding-left: 1rem;
+                  }
                 `}
             >
                 Already a Draw It Paint customer? Get an additional 10% off your next order so that you can utilize more
@@ -81,9 +93,12 @@ const PastCustomers = ({data}) => (
         {/*PAST CUSTOMERS*/}
         <section
             css={css`
-                  padding-top: 7rem;
-                  max-width: 1120px;
-                  margin: auto;
+                  padding-top: 2rem;
+                  @media only screen and (min-width: 1120px) {
+                    padding-top: 7rem;
+                    max-width: 1120px;
+                    margin: auto;
+                  }
                 `}
         >
             <h3>Some Of Our Past Customers</h3>
@@ -102,24 +117,39 @@ const PastCustomers = ({data}) => (
         <section
             css={css`
               display: grid;
-              grid-template-areas: 
-              ". copy copy . "
-              ". buttonLink . . "
+              grid-template-areas:
+              ". . . ."
+              ". copy copy ."
+              ". buttonLink . ."
               ". . . ."
               ;
-              grid-template-columns: 1fr auto 1fr 3fr;
-              grid-template-rows: auto 46px 1fr;
-              padding-top: 5rem;
+              grid-template-columns: .5rem auto 1fr 1fr;
+              grid-template-rows: 1fr auto auto 2rem;
+              padding-top: 2rem;
+              @media only screen and (min-width: 1120px) {
+                grid-template-areas: 
+                ". copy copy . "
+                ". buttonLink . . "
+                ". . . ."
+                ". . . ."
+                ;
+                grid-template-columns: 1fr auto 1fr 3fr;
+                grid-template-rows: auto 46px 1fr;
+                padding-top: 5rem;
+              }
             `}
         >
-            <BgImage fluid={data.solutions.childImageSharp.fluid} columnEnd="5"/>
+            <BgImage fluid={data.solutions.childImageSharp.fluid} columnEnd="5" rowEnd="5"/>
             <section
                 css={css`
                   grid-area: copy;
                   display: flex;
                   flex-flow: column nowrap;
                   padding-top: 5rem;
-                  padding-bottom: 1rem;
+                  padding-bottom: 3rem;
+                  @media only screen and (min-width: 1120px) {
+                    padding-bottom: 1rem;
+                  }
                 `}
             >
                 <h3

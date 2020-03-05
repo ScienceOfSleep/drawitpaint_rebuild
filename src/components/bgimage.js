@@ -9,7 +9,7 @@ const BgImage = styled(Image)`
   width: 100%;
   height: ${props => props.height || "100%"};
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: ${props => props.rowEnd || 4};
   grid-column-start: 1;
   grid-column-end: ${props => props.columnEnd || 4};
   z-index: -1;

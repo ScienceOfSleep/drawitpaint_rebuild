@@ -19,15 +19,15 @@ const IndexPage = ({data}) => (
         <section
             css={css`
               display: grid;
+              height: 100vh;
+              width: 100vw;
               grid-template-areas: 
               "mainTitle mainTitle mainTitle"
               ". buttonLink ."
               ". . ."
               ;
               grid-template-columns: 1fr auto 1fr;
-              grid-template-rows: 2fr 46px 1fr;
-              height: 100vh;
-              width: 100vw;
+              grid-template-rows: 2fr 46px 1fr;              
             `}
         >
             <BgImage fluid={data.landingpage.childImageSharp.fluid}/>
@@ -45,6 +45,7 @@ const IndexPage = ({data}) => (
                       margin: auto auto 0;
                       color: #ffffff;
                       padding-top: 5rem;
+                      text-align: center;
                     `}
                 >
                     Every Possibility
@@ -73,16 +74,27 @@ const IndexPage = ({data}) => (
             {/*EVERYTHING YOU NEED*/}
             <section
                 css={css`
-                display: grid;
-                grid-template-areas: 
-                "heading pic"
-                "subheading pic"
-                "para pic"
-                ;
-                grid-template-rows: 1fr 1fr;
                 padding-top: 2.5rem;
-                max-width: 1120px;
-                margin: auto;
+                display: grid;
+                grid-template-areas:
+                "pic"
+                "heading"
+                "subheading"
+                "para"
+                ;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                    grid-template-areas: 
+                    "heading pic"
+                    "subheading pic"
+                    "para pic"
+                    ;
+                    max-width: 1120px;
+                    margin: auto;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             `}
             >
                 <h3
@@ -110,8 +122,10 @@ const IndexPage = ({data}) => (
                     fluid={data.everything.childImageSharp.fluid}
                     css={css`
                             grid-area: pic;
-                            width: 500px;
-                            margin-left: 4rem;
+                            @media only screen and (min-width: 1120px) {
+                                width: 500px;
+                                margin-left: 4rem;
+                              }
                           `}
                 />
             </section>
@@ -119,15 +133,25 @@ const IndexPage = ({data}) => (
             {/*REVOLUTION*/}
             <section
                 css={css`
-                display: grid;
-                grid-template-areas: 
-                "pic heading"
-                "pic para"
-                ;
-                grid-template-rows: 1fr 1fr;
                 padding-top: 4rem;
-                max-width: 1120px;
-                margin: auto;
+                display: grid;
+                grid-template-areas:
+                "pic"
+                "heading"
+                "para"
+                ;
+                padding-right: .5rem;
+                padding-left: .5rem;
+                @media only screen and (min-width: 1120px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                    grid-template-areas: 
+                    "pic heading"
+                    "pic para"
+                    ;
+                    max-width: 1120px;
+                    margin: auto;
+                  } 
             `}
             >
                 <h3
@@ -149,8 +173,10 @@ const IndexPage = ({data}) => (
                     fluid={data.revolution.childImageSharp.fluid}
                     css={css`
                             grid-area: pic;
-                            width: 500px;
-                            margin-right: 7rem;
+                            @media only screen and (min-width: 1120px) {
+                                width: 500px;
+                                margin-right: 7rem;
+                                }
                           `}
                 />
             </section>
@@ -158,76 +184,117 @@ const IndexPage = ({data}) => (
             {/*FEATURES*/}
             <section
                 css={css`
-                display: grid;
-                grid-template-areas: 
-                "heading1 heading1 heading2 heading2"
-                "para1 para1 para2 para2"
-                ". buttonLink buttonLink ."
-                ;
-                grid-template-rows: 1fr 1fr auto;
-                grid-template-columns: 1fr auto auto 1fr;
                 padding-top: 3rem;
-                max-width: 1120px;
-                margin: auto;
+                display: grid;
+                grid-template-areas:
+                "heading1 heading1 heading1"
+                "para1 para1 para1"
+                "heading2 heading2 heading2"
+                "para2 para2 para2"
+                ". buttonLink ."
+                ;
+                grid-template-columns: 1fr auto 1fr;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                    grid-template-areas: 
+                    "heading1 heading1 heading2 heading2"
+                    "para1 para1 para2 para2"
+                    ". buttonLink buttonLink ."
+                    ;
+                    grid-template-rows: 1fr 1fr auto;
+                    grid-template-columns: 1fr auto auto 1fr;
+                    max-width: 1120px;
+                    margin: auto;
+                }
             `}
             >
                 <h3
                     css={css`
                     grid-area: heading1;
-                    padding-right: 2rem;
-                  `}
+                    @media only screen and (min-width: 1120px) {
+                      padding-right: 2rem;
+                      }
+                    `}
                 >
                     Distinctive Modern Look
                 </h3>
                 <p
                     css={css`
                     grid-area: para1;
-                    padding-right: 2rem;
-                  `}
+                    @media only screen and (min-width: 1120px) {
+                      padding-right: 2rem;
+                      }
+                    `}
                 >
                     A sophisticated Self-Leveling and Self-Smoothing paint offers a clean, distinct, glass-like dry erase surface well-suited to a variety of modern businesses and workspaces.
                 </p>
                 <h3
                     css={css`
                     grid-area: heading2;
-                    padding-left: 4rem;
-                  `}
+                    padding-top: 2rem;
+                    @media only screen and (min-width: 1120px) {
+                      padding-top: 0;
+                      padding-left: 4rem;
+                      }
+                    `}
                 >
                     Effortless For Everyone
                 </h3>
                 <p
                     css={css`
-                    grid-area: para2;
-                    padding-left: 4rem;
-                    padding-bottom: 4rem;
-                  `}
+                      grid-area: para2;
+                      padding-bottom: 3.5rem;
+                      @media only screen and (min-width: 1120px) {
+                        padding-bottom: 4rem;
+                        padding-left: 4rem;
+                        }
+                    `}
                 >
                     Paint that work as hard as you. Simply Shake, Mix, and Roll for a professional glass-like finish.
                     These are just some of the ways we make dry erase better for people.
                 </p>
-                <LinkButton to="index" content="Learn More"/>
+                <LinkButton to="/features" content="Learn More"/>
             </section>
 
             {/*PRODUCT PREVIEW*/}
             <section
                 css={css`
-                display: grid;
-                grid-template-areas: 
-                "heading subheading1"
-                "heading para1"
-                "heading subheading2"
-                "heading para2"
-                ". subheading3"
-                ". para3"
-                ;
                 padding-top: 5rem;
-                max-width: 1120px;
-                margin: auto;
-            `}
+                display: grid;
+                grid-template-areas:
+                "heading"
+                "subheading1"
+                "para1"
+                "subheading2"
+                "para2"
+                "subheading3"
+                "para3"
+                ;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                    grid-template-areas: 
+                    "heading subheading1"
+                    "heading para1"
+                    "heading subheading2"
+                    "heading para2"
+                    ". subheading3"
+                    ". para3"
+                    ;
+                    max-width: 1120px;
+                    margin: auto;
+                    }
+                `}
             >
                 <h3
                     css={css`
                     grid-area: heading;
+                    padding-bottom: 1rem;
                   `}
                 >
                     Complete Dry Erase Selection
@@ -244,7 +311,11 @@ const IndexPage = ({data}) => (
                     css={css`
                     grid-area: para1;
                     margin-top: 0;
-                  `}
+                    text-align: center;
+                    @media only screen and (min-width: 1120px) {
+                      text-align: left;
+                      }
+                    `}
                 >
                     For heavy usage in a medium sized business.
                 </p>
@@ -252,6 +323,10 @@ const IndexPage = ({data}) => (
                     css={css`
                     grid-area: subheading2;
                     color: var(--brand-color);
+                    padding-top: .5rem;
+                    @media only screen and (min-width: 1120px) {
+                      padding-top: 0;
+                    }
                   `}
                 >
                     Unique: The Hero
@@ -260,6 +335,10 @@ const IndexPage = ({data}) => (
                     css={css`
                     grid-area: para2;
                     margin-top: 0;
+                    text-align: center;
+                    @media only screen and (min-width: 1120px) {
+                      text-align: left;
+                      }
                   `}
                 >
                     For heavy usage in a business or warehouse setting.
@@ -268,6 +347,10 @@ const IndexPage = ({data}) => (
                     css={css`
                     grid-area: subheading3;
                     color: var(--brand-color);
+                    padding-top: .5rem;
+                    @media only screen and (min-width: 1120px) {
+                    padding-top: 0;
+                    }
                   `}
                 >
                     Limitless: The Don
@@ -276,6 +359,10 @@ const IndexPage = ({data}) => (
                     css={css`
                     grid-area: para3;
                     margin-top: 0;
+                    text-align: center;
+                    @media only screen and (min-width: 1120px) {
+                      text-align: left;
+                    }
                   `}
                 >
                     For heavy usage in large facilities with exposure to chemicals.
@@ -283,14 +370,24 @@ const IndexPage = ({data}) => (
             </section>
             <section
                 css={css`
+                      padding-top: 2rem;
                       display: grid;
                       grid-template-areas:
-                      "card1 card2 card3"
+                      "card1"
+                      "card2"
+                      "card3"
                       ;
-                      grid-template-columns: 1fr 1fr 1fr;
-                      padding-top: 2rem;
-                      max-width: 1120px;
-                      margin: auto;
+                      padding-right: .5rem;
+                      padding-left: .5rem;
+                      @media only screen and (min-width: 1120px) {
+                          padding-left: 0;
+                          padding-right: 0;
+                          grid-template-areas:
+                          "card1 card2 card3"
+                          ;
+                          max-width: 1120px;
+                          margin: auto;
+                        }
                     `}
             >
                 <ProductCard heading="Recruit: The Thinker" subheading="White" price="$445"
@@ -318,16 +415,26 @@ const IndexPage = ({data}) => (
             {/*CREATE THE EXACT SPACE YOU WANT*/}
             <section
                 css={css`
+                padding-top: 4rem;
                 display: grid;
-                grid-template-areas: 
-                "pic heading"
-                "pic para"
+                grid-template-areas:
+                "heading"
+                "para"
+                "pic"
                 ;
-                grid-template-rows: 1fr 1fr;
-                padding-top: 8rem;
-                max-width: 1120px;
-                margin: auto;
-            `}
+                padding-left: .5rem;
+                padding-right: .5rem;
+                @media only screen and (min-width: 1120px) {
+                    padding-right: 0;
+                    padding-left: 0;
+                    grid-template-areas: 
+                    "pic heading"
+                    "pic para"
+                    ;
+                    max-width: 1120px;
+                    margin: auto;
+                  }
+                `}
             >
                 <h3
                     css={css`
@@ -346,19 +453,26 @@ const IndexPage = ({data}) => (
                 <Img
                     fluid={data.spaceyouwant.childImageSharp.fluid}
                     css={css`
-                grid-area: pic;
-                width: 500px;
-                margin-right: 1rem;
-              `}
+                        grid-area: pic;
+                        padding-top: 1rem;
+                        @media only screen and (min-width: 1120px) {
+                          padding-top: 0;
+                          width: 500px;
+                          margin-right: 1rem;
+                          }
+                      `}
                 />
             </section>
 
             {/*PAST CUSTOMERS*/}
             <section
                 css={css`
-                  padding-top: 8rem;
-                  max-width: 1120px;
-                  margin: auto;
+                  padding-top: 4rem;
+                  @media only screen and (min-width: 1120px) {
+                     padding-top: 8rem;
+                     max-width: 1120px;
+                     margin: auto;
+                    }
                 `}
             >
                 <h3>Some Of Our Past Customers</h3>
@@ -385,17 +499,25 @@ const IndexPage = ({data}) => (
             <section
                 css={css`
                 display: grid;
-                grid-template-areas: 
-                "copy copy ."
-                "copy copy buttonLink"
-                "copy copy ."
+                grid-template-areas:
+                "copy copy copy"
+                ". buttonLink ."
                 ;
-                grid-template-rows: 1fr auto 1fr;
-                max-width: 1120px;
-                margin: auto;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            `}
+                grid-template-columns: 1fr auto 1fr;
+                padding: 2rem .5rem;
+                @media only screen and (min-width: 1120px) {
+                  padding-left: 0;
+                  padding-right: 0;
+                  grid-template-areas: 
+                  "copy copy ."
+                  "copy copy buttonLink"
+                  "copy copy ."
+                  ;
+                  grid-template-rows: 1fr auto 1fr;
+                  max-width: 1120px;
+                  margin: auto;
+                  }
+              `}
             >
                 <section
                     css={css`
@@ -418,21 +540,30 @@ const IndexPage = ({data}) => (
                         css={css`
                           grid-area: subheading;
                           color: #ffffff;
-                          margin-top: 0;
+                          @media only screen and (min-width: 1120px) {
+                            margin-top: 0;
+                          }
                         `}
                     >
                         With a modern and distinct glass-like finish.
                     </h4>
                     <p
                         css={css`
-                    grid-area: para;
-                    color: #ffffff;
-                    margin-top: 0;
-                  `}
+                                grid-area: para;
+                                color: #ffffff;
+                                margin-top: 1rem;
+                                margin-bottom: 1.5rem;
+                                text-align: center;
+                                @media only screen and (min-width: 1120px) {
+                                  margin-top: 0;
+                                  text-align: left;
+                                }
+                              `}
                     >
                         It’s no wonder it has been added to the idea generation hubs of many business professionals,
                         manufacturers, and researchers across America.
-                    </p></section>
+                    </p>
+                </section>
                 <Link
                     to="shop"
                     css={css`
@@ -468,6 +599,7 @@ const IndexPage = ({data}) => (
                 ". . buttonLink . ."
                 ;
                 grid-template-columns: 1fr 1fr auto 1fr 1fr;
+                padding-bottom: 2rem;
             `}
         >
             <h3
@@ -494,7 +626,7 @@ const IndexPage = ({data}) => (
             >
                 +1 855-437-2948
             </p>
-            <LinkButton to="index" content="Contact Us"/>
+            <LinkButton to="/contact" content="Contact Us"/>
         </section>
     </Layout>
 );

@@ -60,10 +60,18 @@ const Layout = ({ children }) => {
         line-height: 2em;
         font-weight: 400;
         color: var(--font);
+        text-align: justify;
+          @media only screen and (min-width: 1120px) {
+            text-align: left;
+          }
+
         }
         h1{
         font-weight: bold;
-        font-size: 116px;
+        font-size: 4rem;
+        @media only screen and (min-width: 1120px) {
+          font-size: 116px;
+          }
         }
         h2{
           font-weight: 400;
@@ -75,12 +83,20 @@ const Layout = ({ children }) => {
           font-weight: 600;
           line-height: 1.3em;
           color: var(--font);
+          text-align: center;
+          @media only screen and (min-width: 1120px) {
+            text-align: left;
+          }
         }
         h4{
           font-size: 20px;
           font-weight: 500;
           line-height: 1.66em;
           color: var(--font);
+          text-align: center;
+          @media only screen and (min-width: 1120px) {
+            text-align: left;
+          }
         }
         h1,
         h2,
@@ -98,6 +114,8 @@ const Layout = ({ children }) => {
         li{
         margin-top: 0.25rem;
         }
+
+
 
 `}/>
         <Header/>
