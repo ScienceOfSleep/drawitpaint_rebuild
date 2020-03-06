@@ -7,6 +7,7 @@ import LinkButton from "../components/linkbutton";
 import BgImage from "../components/bgimage";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Header from "../components/header";
 
 
 const PastCustomers = ({data}) => (
@@ -16,17 +17,19 @@ const PastCustomers = ({data}) => (
         <section
             css={css`
               display: grid;
-              grid-template-areas: 
+              grid-template-areas:
+              "navbar navbar navbar" 
               "mainTitle mainTitle mainTitle"
               ". buttonLink ."
               ". . ."
               ;
               grid-template-columns: 1fr auto 1fr;
-              grid-template-rows: 2fr 46px 1fr;
+              grid-template-rows: auto 2fr 46px 1fr;
               height: 100vh;
               width: 100vw;
             `}
         >
+            <Header/>
             <BgImage fluid={data.landing.childImageSharp.fluid}/>
 
             <h1

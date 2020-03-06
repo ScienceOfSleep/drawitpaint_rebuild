@@ -1,15 +1,99 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import {css} from "@emotion/core";
+import {css, Global} from "@emotion/core";
 import BgImage from "../components/bgimage";
 import LinkButton from "../components/linkbutton";
 import {graphql} from "gatsby";
 import Img from "gatsby-image";
 import ContactForm from "../components/contactform";
+import Header from "../components/header";
 
 const Contact = ({data}) => (
-    <Layout>
+    <main>
+        <Global styles={css`
+        :root{
+          --shadow-color: #A8AFB5;
+          --brand-color: #dd4c1b;
+          --alt-brand-color: #417fb9;
+        }
+         *{
+          box-sizing: border-box;
+          margin: 0;
+          }
+        html,
+        body{
+          margin: 0;
+          padding: 0;
+          color: var(--font);
+          font-family: "Poppins", "Roboto Light", Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          line-height: 1.4;
+        }
+        /*  remove margin for main div that gatsby mounts into */
+        > div{
+        margin-top: 0;
+        }
+        p{
+        font-size: 16px;
+        line-height: 2em;
+        font-weight: 400;
+        color: var(--font);
+        text-align: justify;
+          @media only screen and (min-width: 1120px) {
+            text-align: left;
+          }
+
+        }
+        h1{
+        font-weight: bold;
+        font-size: 4rem;
+        @media only screen and (min-width: 1120px) {
+          font-size: 116px;
+          }
+        }
+        h2{
+          font-weight: 400;
+          font-size: 28px;
+          color: var(--font);
+        }
+        h3{
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 1.3em;
+          color: var(--font);
+          text-align: center;
+          @media only screen and (min-width: 1120px) {
+            text-align: left;
+          }
+        }
+        h4{
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.66em;
+          color: var(--font);
+          text-align: center;
+          @media only screen and (min-width: 1120px) {
+            text-align: left;
+          }
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+        + * {
+        margin-top: 0.5rem;
+        }
+        }
+        strong{
+        color: var(--font);
+        }
+        li{
+        margin-top: 0.25rem;
+        }
+`}/>
         <SEO title="Contact"/>
         {/*LANDING SHOT*/}
         <section
@@ -18,14 +102,16 @@ const Contact = ({data}) => (
               width: 100vw;
               display: grid;
               grid-template-areas: 
+              "navbar navbar navbar"
               ". . ."
               "mainTitle mainTitle mainTitle"
               ". . ."
               ;
-              grid-template-rows: 1fr auto 1fr;    
+              grid-template-rows: auto 1fr auto 1.5fr;    
             `}
         >
             <BgImage fluid={data.contact.childImageSharp.fluid}/>
+            <Header/>
 
             <h1
                 css={css`          
@@ -48,9 +134,8 @@ const Contact = ({data}) => (
             ;
             padding-top: 2rem;
             @media only screen and (min-width: 1120px) {
-              grid-template-areas:
-              "addresses . contact . form";
-              grid-template-columns: 1fr 3rem 1fr 3rem 1fr;
+              display: flex;
+              justify-content: space-between;
               max-width: 1120px;
               margin: auto;
               }
@@ -76,6 +161,7 @@ const Contact = ({data}) => (
                   "para3"
                   "para4"
                   ;
+                  grid-template-columns: auto;
                   }
                 `}
             >
@@ -197,7 +283,7 @@ const Contact = ({data}) => (
             </section>
             <ContactForm/>
         </section>
-    </Layout>
+    </main>
 );
 
 export const query = graphql`

@@ -6,6 +6,7 @@ import Img from "gatsby-image";
 import {graphql} from "gatsby";
 import BgImage from "../components/bgimage";
 import LinkButton from "../components/linkbutton";
+import Header from "../components/header";
 
 const Features = ({data}) => (
     <Layout>
@@ -16,17 +17,19 @@ const Features = ({data}) => (
             css={css`
               display: grid;
               grid-template-areas: 
+              "navbar navbar navbar"
               "mainTitle mainTitle mainTitle"
               ". buttonLink ."
               ". . ."
               ;
               grid-template-columns: 1fr auto 1fr;
-              grid-template-rows: 2fr 46px 1fr;
+              grid-template-rows: auto 2fr 46px 1fr;
               height: 100vh;
               width: 100vw;
             `}
         >
             <BgImage fluid={data.landing.childImageSharp.fluid}/>
+            <Header/>
 
             <h1
                 css={css`

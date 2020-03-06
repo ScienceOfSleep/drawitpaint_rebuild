@@ -12,6 +12,7 @@ import { Global, css } from "@emotion/core";
 
 import Header from "./header"
 import ContactForm from "./contactform";
+import Footer from "./footer";
 
 const Layout = ({ children }) => {
 
@@ -29,14 +30,7 @@ const Layout = ({ children }) => {
     <>
         <Global styles={css`
         :root{
-          --main-bg-color: #ECEDED;
-          --font: #000000;
-          --strong-font: #000000;
-          --light-font: #FFFFFF;
-          --title-bg-color: #1C1718;
-          --elevated-bg-color: #FFFFFF;
           --shadow-color: #A8AFB5;
-          --border-color: #1C1718;
           --brand-color: #dd4c1b;
           --alt-brand-color: #417fb9;
         }
@@ -117,15 +111,9 @@ const Layout = ({ children }) => {
         margin-top: 0.25rem;
         }
 `}/>
-        <Header/>
         <div>
             <main>{children}</main>
-            <footer>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-                <ContactForm/>
-            </footer>
+            <Footer/>
         </div>
     </>
   )

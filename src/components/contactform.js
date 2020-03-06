@@ -15,8 +15,38 @@ const ContactForm = () => {
             onSubmit={handleSubmit(onSubmit)}
             css={css`
                 grid-area: form;
+                display: flex;
+                flex-flow: column;
+                width: 300px;
+                max-width: 380px;
+                max-height: 325px;
+                border: 4px solid var(--brand-color);
+                border-radius: .75rem;
+                box-shadow: var(--shadow-color) 3px 3px;
+                margin-bottom: 2rem;
+                margin-top: 4px;
+                align-self: center;
+                label{
+                color: var(--brand-color);
+                margin-left: .5rem;
+                margin-right: .5rem;
+                }
+                input{
+                margin-bottom: .75rem;
+                margin-left: .5rem;
+                margin-right: .5rem;
+                }
+                textarea{
+                margin-left: .5rem;
+                margin-right: .5rem;
+                }
+                h4{
+                margin-left: .5rem;
+                margin-right: .5rem;
+                }
                 `}
         >
+            <h4>Contact Us Today!</h4>
             <label htmlFor="Name">Name</label>
             <input name="Name" defaultValue="Name" ref={register({required: true})}/>
             <label htmlFor="Email">Email</label>
@@ -26,7 +56,27 @@ const ContactForm = () => {
             })}/>
             <label htmlFor="Message">Message</label>
             <textarea name="Message" defaultValue="Message" ref={register({required: true})}/>
-            <input type="submit"/>
+            <input
+                type="submit"
+                css={css`
+                        color: #ffffff;
+                        background-color: #dd4c1b;
+                        border-radius: .75em;
+                        padding: .8em 1.25em;
+                        cursor: pointer;
+                        font-weight: 700;
+                        font-size: 15px;
+                        letter-spacing: 2px;
+                        grid-area: button;
+                        border: 0;
+                        width: 100px;
+                        margin: 1rem auto !important;
+                        &:hover, &:focus{
+                          background-color: #417fb9;
+                        }
+
+                    `}
+            />
             {errors.Name && <span>This field is required</span>}
             {errors.Message && <span>This field is required</span>}
             {errors.Email && errors.Email.types.pattern && (<span>Please enter a valid Email</span>)}

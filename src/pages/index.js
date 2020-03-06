@@ -9,6 +9,7 @@ import BgImage from "../components/bgimage";
 import ProductCard from "../components/productcard";
 
 import LinkButton from "../components/linkbutton";
+import Header from "../components/header";
 
 
 const IndexPage = ({data}) => (
@@ -22,16 +23,18 @@ const IndexPage = ({data}) => (
               display: grid;
               height: 100vh;
               width: 100vw;
-              grid-template-areas: 
+              grid-template-areas:
+              "navbar navbar navbar" 
               "mainTitle mainTitle mainTitle"
               ". buttonLink ."
               ". . ."
               ;
               grid-template-columns: 1fr auto 1fr;
-              grid-template-rows: 2fr 46px 1fr;              
+              grid-template-rows: auto 2fr 46px 1fr;              
             `}
         >
             <BgImage fluid={data.landingpage.childImageSharp.fluid}/>
+            <Header/>
 
             <title
                 css={css`
