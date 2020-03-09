@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/shipping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/shippinglanding.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/warranty.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/terms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/terms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/warranty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/warranty.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +56,11 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/yarn.lock" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Public\Josh\Code\gatsby-draw-it-paint\src\images" />
       <recent name="C:\Users\Public\Josh\Code\gatsby-draw-it-paint\src\images\index" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Public\Josh\Code\gatsby-draw-it-paint\src\images" />
       <recent name="C:\Users\Public\Josh\Code\gatsby-draw-it-paint\src\images\index" />
     </key>
@@ -78,7 +84,8 @@
       <workItem from="1583248804734" duration="24936000" />
       <workItem from="1583334352909" duration="28080000" />
       <workItem from="1583420857202" duration="22494000" />
-      <workItem from="1583506757599" duration="24929000" />
+      <workItem from="1583506757599" duration="25590000" />
+      <workItem from="1583763200075" duration="9650000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1582930077732</created>
@@ -164,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583529166550</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Header and Footer">
+      <created>1583537593699</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1583537593699</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,10 +214,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583442796012" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583529165693">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583776919238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583529165693" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583776919238" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1583345667332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -257,8 +271,19 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/header.js</url>
           <line>1</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/warranty.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/index.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

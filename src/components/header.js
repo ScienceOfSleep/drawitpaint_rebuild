@@ -53,6 +53,7 @@ const Header = () => {
       }
       @media only screen and (min-width: 1120px) {
       color: #ffffff;
+      background-color: transparent;
       &[data-active='true']{
         color: #000000;
       }  

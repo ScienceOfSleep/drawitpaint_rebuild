@@ -118,6 +118,7 @@ const Contact = ({data}) => (
                       margin: auto auto 0;
                       color: #ffffff;
                       grid-area: mainTitle;
+                      text-align: center;
                     `}
             >
                 Contact Us
@@ -128,10 +129,11 @@ const Contact = ({data}) => (
             css={css`
             display: grid;
             grid-template-areas:
-            "contact"
-            "addresses"
-            "form"
+            ". contact ."
+            ". addresses ."
+            ". form ."
             ;
+            grid-template-columns: 1fr auto 1fr;
             padding-top: 2rem;
             @media only screen and (min-width: 1120px) {
               display: flex;
