@@ -251,7 +251,6 @@ const Header = () => {
                         <ListLink to="/pastcustomers">Past Customers</ListLink>
                         <ListLink to="/shop">Shop</ListLink>
                         <ListLink to="/blog">Blog</ListLink>
-                        <ListLink to="/cart">Cart</ListLink>
                         <ListLink to="/contact">Contact</ListLink>
                         <li
                             css={css`
