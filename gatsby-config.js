@@ -5,6 +5,7 @@ module.exports = {
     title: `DrawItPaint`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: `http://drawitpaint.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,6 +46,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.drawitpaint.com',
+        sitemap: 'https://www.drawitpaint.com/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        createLinkInHead: true,
+      }
+    },
     // {
     //   resolve: `gatsby-source-wordpress`,
     //   options: {
@@ -76,6 +91,10 @@ module.exports = {
     // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/index/`, `/features/`, `/pastcustomers/`, `/shop/`, `/contact/`, `/terms/`, `/warranty/`],
+      },
+    },],
 };

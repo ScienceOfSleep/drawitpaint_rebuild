@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/shopcard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/donb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/donc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/herob.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/heroc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/shoplanding.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/thinkerb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/thinkerc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hrefbutton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shopcard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shopcard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -53,7 +43,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,7 +85,9 @@
       <workItem from="1583420857202" duration="22494000" />
       <workItem from="1583506757599" duration="25590000" />
       <workItem from="1583763200075" duration="16484000" />
-      <workItem from="1583851874600" duration="9618000" />
+      <workItem from="1583851874600" duration="9843000" />
+      <workItem from="1583939601065" duration="3247000" />
+      <workItem from="1583959019889" duration="4365000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1582930077732</created>
@@ -195,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583776921047</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Shop phase 1">
+      <created>1583880751684</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583880751684</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +219,8 @@
     <MESSAGE value="Contact form, Contact page, sticky header animation" />
     <MESSAGE value="Header and Footer" />
     <MESSAGE value="Warranty &amp; Shipping, Terms pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Warranty &amp; Shipping, Terms pages" />
+    <MESSAGE value="Shop phase 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shop phase 1" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -232,18 +232,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583442796012" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583776919238">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583880750520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583776919238" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583880750520" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1583345667332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1583345667332" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1583248693310">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1583940679180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583248693310" />
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583940679180" />
     <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1583173825383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

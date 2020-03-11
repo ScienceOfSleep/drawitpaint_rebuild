@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import {css} from "@emotion/core"
 import LinkButton from "./linkbutton";
+import HrefButton from "./hrefbutton";
 
 const ShopCard = (props) => {
     return <section
@@ -16,16 +17,6 @@ const ShopCard = (props) => {
               grid-template-columns: 1fr 1fr auto;
               grid-area: ${props.area};
               padding-bottom: 1.5rem;
-              //margin-left: .25rem;
-              //margin-right: .25rem;
-              //&:first-of-type{
-              //  margin-left: 0;
-              //  margin-right: .5rem;
-              //}
-              //&:last-of-type{
-              //  margin-right: 0;
-              //  margin-left: .5rem;
-              //}
             `}
     >
         <Img fluid={props.fluid} css={css`grid-area: pic`}/>
@@ -56,7 +47,7 @@ const ShopCard = (props) => {
         >
             {props.price}
         </h4>
-        <LinkButton to={props.to} content="Buy"/>
+        <HrefButton to={props.to} content="Buy"/>
     </section>
 };
 

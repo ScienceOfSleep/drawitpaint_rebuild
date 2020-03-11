@@ -101,7 +101,8 @@ const Shop = ({data}) => (
             <ShopCard heading="Unique: The Hero" subheading="Black" price="$795"
                       fluid={data.herob.childImageSharp.fluid} area="card6" to="/shop"/>
             <ShopCard heading="Limitless: The Don" subheading="White" price="$1045"
-                      fluid={data.donw.childImageSharp.fluid} area="card7" to="/shop"/>
+                      fluid={data.donw.childImageSharp.fluid} area="card7"
+                      to="http://f8425a6b.ngrok.io/product/limitless-the-don-white/"/>
             <ShopCard heading="Limitless: The Don" subheading="Clear" price="$1095"
                       fluid={data.donc.childImageSharp.fluid} area="card8" to="/shop"/>
             <ShopCard heading="Limitless: The Don" subheading="Black" price="$1095"
