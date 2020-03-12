@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/hrefbutton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shopcard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shopcard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,8 @@
       <workItem from="1583763200075" duration="16484000" />
       <workItem from="1583851874600" duration="9843000" />
       <workItem from="1583939601065" duration="3247000" />
-      <workItem from="1583959019889" duration="4365000" />
+      <workItem from="1583959019889" duration="4812000" />
+      <workItem from="1584052006804" duration="1570000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1582930077732</created>
@@ -194,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583880751684</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Offline, robots.txt, and sitemap">
+      <created>1583967001456</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583967001457</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +223,8 @@
     <MESSAGE value="Header and Footer" />
     <MESSAGE value="Warranty &amp; Shipping, Terms pages" />
     <MESSAGE value="Shop phase 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shop phase 1" />
+    <MESSAGE value="Offline, robots.txt, and sitemap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Offline, robots.txt, and sitemap" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -232,10 +236,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583442796012" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583880750520">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1583967000509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583880750520" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583967000509" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1583345667332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
