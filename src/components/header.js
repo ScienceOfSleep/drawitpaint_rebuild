@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react"
+import React, {useEffect, useState} from "react"
 import {Link, useStaticQuery, graphql} from "gatsby"
 import {css} from "@emotion/core"
 import styled from "@emotion/styled"

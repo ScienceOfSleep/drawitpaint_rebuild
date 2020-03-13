@@ -5,26 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, {useEffect, useRef, useState} from "react"
+import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core";
 
-import Header from "./header"
-import ContactForm from "./contactform";
 import Footer from "./footer";
 
 const Layout = ({ children }) => {
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
 
   return (
     <>

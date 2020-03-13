@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
 import {css} from "@emotion/core"
-import LinkButton from "./linkbutton";
 import HrefButton from "./hrefbutton";
 
 const ShopCard = (props) => {

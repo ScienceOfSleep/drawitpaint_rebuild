@@ -6,7 +6,6 @@ import Header from "../components/header";
 import BgImage from "../components/bgimage";
 import {graphql} from "gatsby";
 import ShopCard from "../components/shopcard";
-import ProductCard from "../components/productcard";
 
 const Shop = ({data}) => (
     <Layout>

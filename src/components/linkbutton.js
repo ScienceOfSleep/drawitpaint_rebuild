@@ -1,8 +1,6 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
 
 const StyledLink = styled(Link)`
   color: ${props => props.fontColor || '#ffffff'};
