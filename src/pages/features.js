@@ -78,22 +78,15 @@ const Features = ({data}) => (
                 }
             `}
         >
-            <h3
-                css={css`
-                      grid-area: heading;
-                    `}
-            >
+            <h3>
                 Technology ahead of the curve
             </h3>
-            <p
-                css={css`
-                      grid-area: para;
-                    `}
-            >
+            <p>
                 Our manufacturing facilities and experience in specialty paint production has shaped the development of
                 our forward-thinking features. With over 18 years of development for our 3 dry erase formulas, you can
                 write easily knowing that your Draw it Paint surface will work just as hard as you do, if not
-                harder. </p>
+                harder.
+            </p>
             <Img
                 fluid={data.curve.childImageSharp.fluid}
                 css={css`
@@ -132,7 +125,6 @@ const Features = ({data}) => (
         >
             <p
                 css={css`
-                    grid-area: para;
                     padding-top: .5rem;
                     @media only screen and (min-width: 1120px) {
                     padding-top: 0;
@@ -185,7 +177,6 @@ const Features = ({data}) => (
             >
                 <h3
                     css={css`
-                        grid-area: heading;
                         color: #ffffff;
                         margin: auto;
                       `}
@@ -194,7 +185,6 @@ const Features = ({data}) => (
                 </h3>
                 <p
                     css={css`
-                            grid-area: para;
                             color: #ffffff;
                             margin: auto;
                             text-align: center;
@@ -333,21 +323,9 @@ const Features = ({data}) => (
                 </p>
             </section>
         </section>
-        <h3
-            css={css`
-                  text-align: center;
-                `}
-        >
-            Tools For Success
-        </h3>
-        <p
-            css={css`
-                  text-align: center;
-                `}
-        >
-            Equip yourself to do great things – so your business will, too. Our <br/>
-            diverse paint portfolio has what you need to achieve your goals.
-        </p>
+        <h3 css={css`text-align: center;`}>Tools For Success</h3>
+        <p css={css`text-align: center;`}>Equip yourself to do great things – so your business will, too. Our <br/>diverse
+            paint portfolio has what you need to achieve your goals.</p>
 
         {/*ORANGEICONS*/}
         <section
@@ -376,264 +354,75 @@ const Features = ({data}) => (
                     ;
                     grid-template-columns: auto 2rem auto 2rem auto 2rem auto;
                   }
+                  section{
+                      display: grid;
+                      grid-template-areas:
+                      ". icon ."
+                      "heading heading heading"
+                      "para para para"
+                      ;
+                      grid-template-rows: 140px auto 1fr;                  }
                 `}
         >
+
             {/*1*/}
-            <section
-                css={css`
-                      grid-area: icon1;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+            <section css={css`grid-area: icon1;`}>
                 <Img fixed={data.orangeicon1.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Emulsification Process
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    Fusing of coats for the smoothest surface possible
-                </p>
-
+                <h4 css={css`text-align: center;`}>Emulsification Process</h4>
+                <p css={css`text-align: center;`}>Fusing of coats for the smoothest surface possible</p>
             </section>
+
             {/*2*/}
-            <section
-                css={css`
-                      grid-area: icon2;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+            <section css={css`grid-area: icon2;`}>
                 <Img fixed={data.orangeicon2.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Self Levelling/ Self Smoothing
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    Adjusts to the surface, correcting minor imperfections and textures for you
-                </p>
-
+                <h4 css={css`text-align: center;`}>Self Levelling/ Self Smoothing</h4>
+                <p css={css`text-align: center;`}>Adjusts to the surface, correcting minor imperfections and textures
+                    for you</p>
             </section>
+
             {/*3*/}
-            <section
-                css={css`
-                      grid-area: icon3;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+            <section css={css`grid-area: icon3;`}>
                 <Img fixed={data.orangeicon3.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Abrasion Resistance
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    If it doesn’t break the wall, it won’t break our paint
-                </p>
-
+                <h4 css={css`text-align: center;`}>Abrasion Resistance</h4>
+                <p css={css`text-align: center;`}>If it doesn’t break the wall, it won’t break our paint</p>
             </section>
+
             {/*4*/}
-            <section
-                css={css`
-                      grid-area: icon4;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+            <section css={css`grid-area: icon4;`}>
                 <Img fixed={data.orangeicon4.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Chemical Resistance
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    Wipe harsh chemicals off just as easily as you do with marker marks
-                </p>
-
+                <h4 css={css`text-align: center;`}>Chemical Resistance</h4>
+                <p css={css`text-align: center;`}>Wipe harsh chemicals off just as easily as you do with marker
+                    marks</p>
             </section>
+
             {/*5*/}
-            <section
-                css={css`
-                      grid-area: icon5;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+            <section css={css`grid-area: icon5;`}>
                 <Img fixed={data.orangeicon5.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Simple Maintenance
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    Wipe away with ease without chemicals or spray cleaners
-                </p>
-
+                <h4 css={css`text-align: center;`}>Simple Maintenance</h4>
+                <p css={css`text-align: center;`}>Wipe away with ease without chemicals or spray cleaners</p>
             </section>
-            <section
-                css={css`
-                      grid-area: icon6;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+
+            {/*6*/}
+            <section css={css`grid-area: icon6;`}>
                 <Img fixed={data.orangeicon6.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Pinpoint Clarity
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    UVForceTM & ColorHDTM pigments for vibrancy & contrast
-                </p>
-
+                <h4 css={css`text-align: center;`}>Pinpoint Clarity</h4>
+                <p css={css`text-align: center;`}>UVForceTM & ColorHDTM pigments for vibrancy & contrast</p>
             </section>
-            <section
-                css={css`
-                      grid-area: icon7;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+
+            {/*7*/}
+            <section css={css`grid-area: icon7;`}>
                 <Img fixed={data.orangeicon7.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    Endurance Tested
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    Made for durability with UltraStrengthTM & StrongAdhesionTM
-                </p>
-
+                <h4 css={css`text-align: center;`}>Endurance Tested</h4>
+                <p css={css`text-align: center;`}>Made for durability with UltraStrengthTM & StrongAdhesionTM</p>
             </section>
-            <section
-                css={css`
-                      grid-area: icon8;
-                      display: grid;
-                      grid-template-areas:
-                      ". icon ."
-                      "heading heading heading"
-                      "para para para"
-                      ;
-                      grid-template-rows: 140px auto 1fr;
-                    `}
-            >
+
+            {/*8*/}
+            <section css={css`grid-area: icon8;`}>
                 <Img fixed={data.orangeicon8.childImageSharp.fixed} css={css`grid-area: icon`}/>
-                <h4
-                    css={css`
-                          grid-area: heading;
-                          text-align: center;
-                        `}
-                >
-                    True Connection
-                </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                          text-align: center;
-                        `}
-                >
-                    Fusing of coats for the smoothest surface possible
-                </p>
-
+                <h4 css={css`text-align: center;`}>True Connection</h4>
+                <p css={css`text-align: center;`}>Fusing of coats for the smoothest surface possible</p>
             </section>
-
         </section>
-
     </Layout>
 );
 

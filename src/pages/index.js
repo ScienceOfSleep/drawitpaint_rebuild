@@ -71,10 +71,7 @@ const IndexPage = ({data}) => (
         </section>
 
 
-        <main
-            css={css`
-        `}
-        >
+        <main>
             {/*EVERYTHING YOU NEED*/}
             <section
                 css={css`
@@ -99,28 +96,24 @@ const IndexPage = ({data}) => (
                     padding-left: 0;
                     padding-right: 0;
                 }
+                h4{
+                  grid-area: subheading;
+                }
             `}
             >
-                <h3
-                    css={css`
-                          grid-area: heading;
-                        `}
-                >
+                <h3>
                     Everything You Need
                 </h3>
-                <h4
-                    css={css`
-                          grid-area: subheading;
-                        `}
-                >
+                <h4>
                     Draw It Paint is an example of the belief that the details are not details; they make the product.
                 </h4>
-                <p
-                    css={css`
-                          grid-area: para;
-                        `}
-                >
-                    Generously sized at 100 square feet or more, Draw It Paint features the highest quality materials to fit your needs. Our nine robust formulas can be applied directly onto ANY smooth surface for a smoother and flawless modern finish. Finely formulated options for your thinkspace in a professional, commercial or industrial capacity and performance beyond the leading brand in paint and surpassing traditional porcelain-steel and glass dry erase. Now available in new performance and color options.
+                <p>
+                    Generously sized at 100 square feet or more, Draw It Paint features the highest quality materials to
+                    fit your needs. Our nine robust formulas can be applied directly onto ANY smooth surface for a
+                    smoother and flawless modern finish. Finely formulated options for your thinkspace in a
+                    professional, commercial or industrial capacity and performance beyond the leading brand in paint
+                    and surpassing traditional porcelain-steel and glass dry erase. Now available in new performance and
+                    color options.
                 </p>
                 <Img
                     fluid={data.everything.childImageSharp.fluid}
@@ -155,23 +148,18 @@ const IndexPage = ({data}) => (
                     ;
                     max-width: 1120px;
                     margin: auto;
+                  }
+                  h3{
+                    padding-top: 3rem;
                   } 
-            `}
+                `}
             >
-                <h3
-                    css={css`
-                            grid-area: heading;
-                            padding-top: 3rem;
-                          `}
-                >
+                <h3>
                     A Revolution in Performance
                 </h3>
-                <p
-                    css={css`
-                    grid-area: para;
-                  `}
-                >
-                    Our proprietary dry erase formulas are designed for performance, engineered for durability, and manufactured for quality, creating a functionality all our own.
+                <p>
+                    Our proprietary dry erase formulas are designed for performance, engineered for durability, and
+                    manufactured for quality, creating a functionality all our own.
                 </p>
                 <Img
                     fluid={data.revolution.childImageSharp.fluid}
@@ -293,40 +281,27 @@ const IndexPage = ({data}) => (
                     max-width: 1120px;
                     margin: auto;
                     }
-                `}
-            >
-                <h3
-                    css={css`
-                    grid-area: heading;
+                  h3{
                     padding-bottom: 1rem;
-                  `}
-                >
-                    Complete Dry Erase Selection
-                </h3>
-                <h4
-                    css={css`
-                    grid-area: subheading1;
+                  }
+                  h4{
                     color: var(--brand-color);
-                  `}
-                >
-                    Recruit: The Thinker
-                </h4>
-                <p
-                    css={css`
-                    grid-area: para1;
+                  }
+                  p{
                     margin-top: 0;
                     text-align: center;
                     @media only screen and (min-width: 1120px) {
                       text-align: left;
-                      }
-                    `}
-                >
-                    For heavy usage in a medium sized business.
-                </p>
+                    }
+                  }
+                `}
+            >
+                <h3>Complete Dry Erase Selection</h3>
+                <h4 css={css`grid-area: subheading1;`}>Recruit: The Thinker</h4>
+                <p css={css`grid-area: para1;`}>For heavy usage in a medium sized business.</p>
                 <h4
                     css={css`
                     grid-area: subheading2;
-                    color: var(--brand-color);
                     padding-top: .5rem;
                     @media only screen and (min-width: 1120px) {
                       padding-top: 0;
@@ -335,22 +310,10 @@ const IndexPage = ({data}) => (
                 >
                     Unique: The Hero
                 </h4>
-                <p
-                    css={css`
-                    grid-area: para2;
-                    margin-top: 0;
-                    text-align: center;
-                    @media only screen and (min-width: 1120px) {
-                      text-align: left;
-                      }
-                  `}
-                >
-                    For heavy usage in a business or warehouse setting.
-                </p>
+                <p css={css`grid-area: para2;`}>For heavy usage in a business or warehouse setting.</p>
                 <h4
                     css={css`
                     grid-area: subheading3;
-                    color: var(--brand-color);
                     padding-top: .5rem;
                     @media only screen and (min-width: 1120px) {
                     padding-top: 0;
@@ -359,19 +322,9 @@ const IndexPage = ({data}) => (
                 >
                     Limitless: The Don
                 </h4>
-                <p
-                    css={css`
-                    grid-area: para3;
-                    margin-top: 0;
-                    text-align: center;
-                    @media only screen and (min-width: 1120px) {
-                      text-align: left;
-                    }
-                  `}
-                >
-                    For heavy usage in large facilities with exposure to chemicals.
-                </p>
+                <p css={css`grid-area: para3;`}>For heavy usage in large facilities with exposure to chemicals.</p>
             </section>
+
             <section
                 css={css`
                       padding-top: 2rem;
@@ -402,7 +355,6 @@ const IndexPage = ({data}) => (
                 <ProductCard heading="Limitless: The Don" subheading="White" price="$1045"
                              fluid={data.donw.childImageSharp.fluid} area="card3"/>
             </section>
-
             <nav
                 css={css`
                       display: flex;
@@ -441,19 +393,13 @@ const IndexPage = ({data}) => (
                   }
                 `}
             >
-                <h3
-                    css={css`
-                    grid-area: heading;
-                  `}
-                >
+                <h3>
                     Create The Exact Space You Want
                 </h3>
-                <p
-                    css={css`
-                    grid-area: para;
-                  `}
-                >
-                    Choose Recruit: The Thinker a Professional formula, Unique: The Hero a Commercial formula or Limitless: The Don an Industrial formula. ColorHD micro paint pigments in White or Black for deep saturation or Clear.
+                <p>
+                    Choose Recruit: The Thinker a Professional formula, Unique: The Hero a Commercial formula or
+                    Limitless: The Don an Industrial formula. ColorHD micro paint pigments in White or Black for deep
+                    saturation or Clear.
                 </p>
                 <Img
                     fluid={data.spaceyouwant.childImageSharp.fluid}
@@ -534,7 +480,6 @@ const IndexPage = ({data}) => (
                 >
                     <h3
                         css={css`
-                    grid-area: heading;
                     color: #ffffff;
                     font-size: 36px;
                     font-weight: 300;
@@ -544,7 +489,6 @@ const IndexPage = ({data}) => (
                     </h3>
                     <h4
                         css={css`
-                          grid-area: subheading;
                           color: #ffffff;
                           @media only screen and (min-width: 1120px) {
                             margin-top: 0;
@@ -555,7 +499,6 @@ const IndexPage = ({data}) => (
                     </h4>
                     <p
                         css={css`
-                                grid-area: para;
                                 color: #ffffff;
                                 margin-top: 1rem;
                                 margin-bottom: 1.5rem;
@@ -606,32 +549,17 @@ const IndexPage = ({data}) => (
                 ;
                 grid-template-columns: 1fr 1fr auto 1fr 1fr;
                 padding-bottom: 2rem;
+                h3{
+                  margin: auto;
+                }
+                p{
+                  margin: auto;
+                }
             `}
         >
-            <h3
-                css={css`
-                    grid-area: heading;
-                    margin: auto;
-                  `}
-            >
-                Keep In Touch
-            </h3>
-            <p
-                css={css`
-                      grid-area: subheading;
-                      margin: auto;
-                    `}
-            >
-                hello@drawitpaint.com
-            </p>
-            <p
-                css={css`
-                    grid-area: para;
-                    margin: auto;
-                  `}
-            >
-                +1 855-437-2948
-            </p>
+            <h3>Keep In Touch</h3>
+            <p css={css`grid-area: subheading;`}>hello@drawitpaint.com</p>
+            <p>+1 855-437-2948</p>
             <LinkButton to="/contact" content="Contact Us"/>
         </section>
     </Layout>

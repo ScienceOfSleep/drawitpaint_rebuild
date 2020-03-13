@@ -45,6 +45,7 @@ const Layout = ({ children }) => {
         font-weight: 400;
         color: var(--font);
         text-align: justify;
+        grid-area: para;
           @media only screen and (min-width: 1120px) {
             text-align: left;
           }
@@ -68,6 +69,7 @@ const Layout = ({ children }) => {
           line-height: 1.3em;
           color: var(--font);
           text-align: center;
+          grid-area: heading;
           @media only screen and (min-width: 1120px) {
             text-align: left;
           }
@@ -78,6 +80,7 @@ const Layout = ({ children }) => {
           line-height: 1.66em;
           color: var(--font);
           text-align: center;
+          grid-area: heading;
           @media only screen and (min-width: 1120px) {
             text-align: left;
           }

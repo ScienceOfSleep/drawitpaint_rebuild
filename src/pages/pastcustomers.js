@@ -81,7 +81,7 @@ const PastCustomers = ({data}) => (
                   border-top: 2px solid #000000;
                   margin-top: 2rem;
                   @media only screen and (min-width: 1120px) {
-                    margin-top: inherit;
+                    margin-top: 0;
                     border-top: 0;
                     border-left: solid 2px #000000;
                     padding-left: 1rem;
@@ -153,19 +153,15 @@ const PastCustomers = ({data}) => (
                   @media only screen and (min-width: 1120px) {
                     padding-bottom: 1rem;
                   }
+                  p{
+                  font-size: 24px;
+                  }
                 `}
             >
-                <h3
-                    css={css`
-                    `}
-                >
+                <h3>
                     Dry Erase Solutions
                 </h3>
-                <p
-                    css={css`
-                      font-size: 24px;
-                    `}
-                >
+                <p>
                     From personal projects to industrial workplaces, our dry erase paints work hard so you don’t have
                     to. Reinvent your spaces and give you and your team the ability to collaborate and create without
                     borders.
