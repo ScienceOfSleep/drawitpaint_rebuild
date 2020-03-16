@@ -60,6 +60,12 @@ module.exports = {
         createLinkInHead: true,
       }
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `drawitpaint`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-wordpress`,
     //   options: {

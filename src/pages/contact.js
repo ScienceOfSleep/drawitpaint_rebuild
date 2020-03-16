@@ -6,6 +6,7 @@ import LinkButton from "../components/linkbutton";
 import {graphql} from "gatsby";
 import ContactForm from "../components/contactform";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Contact = ({data}) => (
     <main>
@@ -38,6 +39,7 @@ const Contact = ({data}) => (
         font-weight: 400;
         color: var(--font);
         text-align: justify;
+        grid-area: para;
           @media only screen and (min-width: 1120px) {
             text-align: left;
           }
@@ -283,6 +285,7 @@ const Contact = ({data}) => (
             </section>
             <ContactForm/>
         </section>
+        <Footer/>
     </main>
 );
 

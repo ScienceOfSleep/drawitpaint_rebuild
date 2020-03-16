@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import Img from "gatsby-image";
 
 import ContactForm from "./contactform";
+import InstaFeed from "./instafeed";
 
 const Footer = () => {
     const FootLink = styled(Link)`
@@ -44,6 +45,7 @@ const Footer = () => {
           grid-template-columns: 1fr auto 1fr;
           @media only screen and (min-width: 1120px) {
             grid-template-areas:
+            "insta insta insta insta insta"
             "nav . social . form"
             ;
             grid-template-columns: 300px 1fr 300px 1fr 300px;
@@ -52,6 +54,7 @@ const Footer = () => {
           }
         `}
     >
+        <InstaFeed/>
         <nav
             css={css`
                   display: grid;

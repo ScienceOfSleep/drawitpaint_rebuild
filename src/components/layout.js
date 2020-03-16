@@ -56,6 +56,8 @@ const Layout = ({ children }) => {
         font-size: 4rem;
         @media only screen and (min-width: 1120px) {
           font-size: 116px;
+          text-transform: capitalize;
+          letter-spacing: 3px;
           }
         }
         h2{

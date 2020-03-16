@@ -65,7 +65,7 @@ const IndexPage = ({data}) => (
             </title>
 
             <LinkButton
-                to="shop"
+                to="/shop"
                 content="Get Dry Erase Paint Now"
             />
         </section>
@@ -548,7 +548,6 @@ const IndexPage = ({data}) => (
                 ". . buttonLink . ."
                 ;
                 grid-template-columns: 1fr 1fr auto 1fr 1fr;
-                padding-bottom: 2rem;
                 h3{
                   margin: auto;
                 }

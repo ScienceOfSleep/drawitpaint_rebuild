@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import {css} from "@emotion/core";
 import Header from "../components/header";
 import {Link} from "gatsby";
+import InstaFeed from "../components/instafeed";
 
 const Blog = ({data}) => (
     <Layout>
@@ -70,6 +71,7 @@ const Blog = ({data}) => (
             {/*        ))}*/}
             {/*    </section>*/}
         </section>
+        <InstaFeed/>
         <section
             css={css`
                 background-color: var(--alt-brand-color);

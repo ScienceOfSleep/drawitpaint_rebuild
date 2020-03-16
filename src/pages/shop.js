@@ -89,31 +89,31 @@ const Shop = ({data}) => (
         >
             <ShopCard heading="Recruit: The Thinker" subheading="White" price="$445"
                       fluid={data.thinkerw.childImageSharp.fluid} area="card1"
-                      to="http://4e5f374f.ngrok.io/product/recruit-the-thinker-white/"/>
+                      to="http://1fc6221a.ngrok.io//product/recruit-the-thinker-white/"/>
             <ShopCard heading="Recruit: The Thinker" subheading="Clear" price="$495"
                       fluid={data.thinkerc.childImageSharp.fluid} area="card2"
-                      to="http://4e5f374f.ngrok.io/product/recruit-the-thinker-clear/"/>
+                      to="http://1fc6221a.ngrok.io//product/recruit-the-thinker-clear/"/>
             <ShopCard heading="Recruit: The Thinker" subheading="Black" price="$495"
                       fluid={data.thinkerb.childImageSharp.fluid} area="card3"
-                      to="http://4e5f374f.ngrok.io/product/recruit-the-thinker-black/"/>
+                      to="http://1fc6221a.ngrok.io//product/recruit-the-thinker-black/"/>
             <ShopCard heading="Unique: The Hero" subheading="White" price="$745"
                       fluid={data.herow.childImageSharp.fluid} area="card4"
-                      to="http://4e5f374f.ngrok.io/product/unique-the-hero-white/"/>
+                      to="http://1fc6221a.ngrok.io//product/unique-the-hero-white/"/>
             <ShopCard heading="Unique: The Hero" subheading="Clear" price="$795"
                       fluid={data.heroc.childImageSharp.fluid} area="card5"
-                      to="http://4e5f374f.ngrok.io/product/unique-the-hero-clear/"/>
+                      to="http://1fc6221a.ngrok.io//product/unique-the-hero-clear/"/>
             <ShopCard heading="Unique: The Hero" subheading="Black" price="$795"
                       fluid={data.herob.childImageSharp.fluid} area="card6"
-                      to="http://4e5f374f.ngrok.io/product/unique-the-hero-black/"/>
+                      to="http://1fc6221a.ngrok.io//product/unique-the-hero-black/"/>
             <ShopCard heading="Limitless: The Don" subheading="White" price="$1045"
                       fluid={data.donw.childImageSharp.fluid} area="card7"
-                      to="http://4e5f374f.ngrok.io/product/limitless-the-don-white/"/>
+                      to="http://1fc6221a.ngrok.io//product/limitless-the-don-white/"/>
             <ShopCard heading="Limitless: The Don" subheading="Clear" price="$1095"
                       fluid={data.donc.childImageSharp.fluid} area="card8"
-                      to="http://4e5f374f.ngrok.io/product/limitless-the-don-clear/"/>
+                      to="http://1fc6221a.ngrok.io//product/limitless-the-don-clear/"/>
             <ShopCard heading="Limitless: The Don" subheading="Black" price="$1095"
                       fluid={data.donb.childImageSharp.fluid} area="card9"
-                      to="http://4e5f374f.ngrok.io/product/limitless-the-don-black/"/>
+                      to="http://1fc6221a.ngrok.io//product/limitless-the-don-black/"/>
         </section>
     </Layout>
 );

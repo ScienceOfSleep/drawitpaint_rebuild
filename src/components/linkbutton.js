@@ -20,7 +20,7 @@ const StyledLink = styled(Link)`
 `;
 
 const LinkButton = props => (
-    <StyledLink>
+    <StyledLink to={props.to}>
         {props.content}
     </StyledLink>
 );
