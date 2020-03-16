@@ -564,6 +564,7 @@ const IndexPage = ({data}) => (
     </Layout>
 );
 
+
 export const query = graphql`
     query {
         customers: file(relativePath: { eq: "customers.jpg" }) {
