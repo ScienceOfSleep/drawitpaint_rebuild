@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contactform.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contactform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/instafeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/instafeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,10 +311,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="809" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1583364090947" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583421482992">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584549627775">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583421482992" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584549627775" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

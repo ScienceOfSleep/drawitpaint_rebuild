@@ -2,53 +2,91 @@ import React from "react"
 import Layout from "../components/layout"
 import {graphql} from "gatsby";
 import SEO from "../components/seo";
-import Img from "gatsby-image";
 import {css} from "@emotion/core";
+import Header from "../components/header";
 
 export default ({data}) => {
     return (
         <Layout>
-            {/*{data.allWordpressPost.edges.map(({ node }) =>*/}
-            {/*    <section key={node.id}>*/}
-            {/*        <SEO title={node.title} description={node.content} />*/}
+            <div
+                css={css`
+                  height: 80px;
+                  background-color: #000000;
+                  display: block;
+                  box-sizing: border-box;
+                `}
+            >
+                <Header/>
+            </div>
+            {data.allWordpressPost.edges.map(({node}) =>
+                <section
+                    key={node.id}
+                >
+                    <SEO title={node.title} description={node.content}/>
 
-            {/*        <h1>{node.title}</h1>*/}
 
-            {/*        <section*/}
-            {/*            css={css`*/}
-            {/*                  grid-area: mainCopy;*/}
-            {/*                  padding-right: 1rem;*/}
-            {/*                  padding-left: 1rem;*/}
-            {/*                  align-self: center;*/}
-            {/*                  h4{*/}
-            {/*                  padding-top: .5rem;*/}
-            {/*                  }*/}
-            {/*                  @media only screen and (min-width: 64.063em) {*/}
-            {/*                  padding-right: 4rem;*/}
-            {/*                  padding-left: 0;*/}
-            {/*                  }*/}
-            {/*                `}*/}
-            {/*            dangerouslySetInnerHTML={{ __html: node.content }}*/}
-            {/*        />*/}
+                    <section
+                        css={css`
+                              display: flex;
+                              flex-flow: column;
+                              padding-bottom: 4rem;
+                              img, figure{
+                                order: 0;
+                                position: absolute;
+                                width: 100%;
+                                z-index: -1;
+                                height: calc(100vh - 80px);
+                              }
+                              h2{
+                              padding-top: 15vh;
+                              color: #ffffff;
+                              font-size: 69px;
+                              font-weight: bold;
+                              }
+                              p{
+                              padding-top: .75rem;
+                              padding-right: .5rem;
+                              &:first-of-type{
+                                padding-top: 50vh;
+                                padding-left: .5rem;
+                              }
+                              }
+                              @media only screen and (min-width: 1120px) {
+                                h2{
+                                  max-width: 1120px;
+                                  margin: auto;
+                                  padding-top: 30vh;
+                                }
+                                p{
+                                  max-width: 1120px;
+                                  margin: auto;
+                                  &:first-of-type{
+                                    padding-top: 55vh;
+                                  }
+                                }
+                              }
+                            `}
+                        dangerouslySetInnerHTML={{__html: node.content}}
+                    />
 
-            {/*    </section>*/}
-            {/*)}*/}
+                </section>
+            )}
         </Layout>
     )
 }
 
-// export const query = graphql`
-//     query($slug: String!) {
-//         allWordpressPost(filter: {slug: {eq: $slug}})
-//         {
-//             edges {
-//                 node {
-//                     title
-//                     excerpt
-//                     content
-//                     slug
-//                 }
-//             }
-//         }
-//     }
-// `
+export const query = graphql`
+    query($slug: String!) {
+        allWordpressPost(filter: {slug: {eq: $slug}})
+        {
+            edges {
+                node {
+                    title
+                    excerpt
+                    content
+                    slug
+                }
+            }
+        }
+    }
+`;

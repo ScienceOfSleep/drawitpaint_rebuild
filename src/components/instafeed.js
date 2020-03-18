@@ -8,12 +8,15 @@ const InstaFeed = () => {
     const instaPhotos = useInstagram();
     return <section
         css={css`
-          padding-top: 1rem;
-          padding-bottom: 2rem;
           border-top: 1px solid #000000;
           border-bottom: 1px solid #000000;
           margin-bottom: 2rem;
           grid-area: insta;
+          padding: 1rem .5rem 2rem;
+          @media only screen and (min-width: 1120px) {
+          padding-left: 0;
+          padding-right: 0;
+          }
         `}
     >
         <h3
@@ -27,6 +30,7 @@ const InstaFeed = () => {
             css={css`
                   display: flex;
                   justify-content: space-between;
+                  flex-flow: wrap;
                   padding-top: 1rem;
                 `}
         >
@@ -44,6 +48,8 @@ const InstaFeed = () => {
                       padding: 0.5rem;
                       border-radius: .25rem;
                       box-shadow: #dd4c1b 0 0 0 10px;
+                      margin-top: 20px;
+                      margin-bottom: 20px;
                       display: grid;
                       grid-template-areas:
                       "pic pic pic"
