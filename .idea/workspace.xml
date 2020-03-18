@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4aad79c6-9439-4ca4-9431-b473b3edb183" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/components/contactform.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contactform.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/instafeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/instafeed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/post.js" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,8 @@
       <workItem from="1583959019889" duration="4812000" />
       <workItem from="1584052006804" duration="13408000" />
       <workItem from="1584367872514" duration="13043000" />
-      <workItem from="1584396025710" duration="2345000" />
+      <workItem from="1584396025710" duration="2839000" />
+      <workItem from="1584454886308" duration="15307000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1582930077732</created>
@@ -232,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584397911635</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Shop links tweak">
+      <created>1584398944408</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1584398944408</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Blog and blog posts, instafeed responsive fix">
+      <created>1584541147264</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1584541147264</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +280,9 @@
     <MESSAGE value="Imports refactor" />
     <MESSAGE value="Css refactor" />
     <MESSAGE value="Instagram integration and Button bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Instagram integration and Button bugfix" />
+    <MESSAGE value="Shop links tweak" />
+    <MESSAGE value="Blog and blog posts, instafeed responsive fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blog and blog posts, instafeed responsive fix" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -275,10 +294,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584122459608" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1584397909042">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1584541145435">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584397909042" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584541145435" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1583345667332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,6 +362,18 @@
           <url>file://$PROJECT_DIR$/src/pages/index.js</url>
           <line>3</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/blog.js</url>
+          <line>93</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/templates/post.js</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
