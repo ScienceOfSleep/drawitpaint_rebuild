@@ -26,6 +26,10 @@ const ContactForm = () => {
                 margin-bottom: 2rem;
                 margin-top: 4px;
                 align-self: center;
+                margin-left: .75rem;
+                @media only screen and (min-width: 1120px) {
+                  margin-left: 0;
+                }
                 label{
                 color: var(--brand-color);
                 margin-left: .5rem;

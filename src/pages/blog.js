@@ -4,7 +4,6 @@ import SEO from "../components/seo";
 import {css} from "@emotion/core";
 import Header from "../components/header";
 import {Link} from "gatsby";
-import InstaFeed from "../components/instafeed";
 
 const Blog = ({data}) => (
     <Layout>
@@ -23,55 +22,77 @@ const Blog = ({data}) => (
             css={css`
             max-width: 1120px;
             margin: auto;
+            text-align: center;
+            padding-top: 1rem;
             `}
         >
             <h1>Blog</h1>
-            <h2>From Tips & Tricks to Inspiration and everything in
-                between. Our blog articles help you make the most
-                out of your dry erase surfaces.</h2>
-            {/*    <section*/}
-            {/*        css={css`*/}
-            {/*              display: flex;*/}
-            {/*              flex-flow: row wrap;*/}
-            {/*              justify-content: center;*/}
-            {/*            `}*/}
-            {/*    >*/}
-            {/*        {data.allWordpressPost.edges.map(({ node }) => (*/}
-            {/*            <article*/}
-            {/*                key={node.id}*/}
-            {/*                css={css`*/}
-            {/*                        border: 4px solid var(--alt-brand-color);*/}
-            {/*                        border-radius: .75rem;*/}
-            {/*                        max-width: 300px;*/}
-            {/*                        padding: .5rem;*/}
-            {/*                        margin: 1rem;*/}
-            {/*                        box-shadow: var(--shadow-color) 3px 3px;*/}
-            {/*                    `}*/}
-            {/*            >*/}
-            {/*                <Link*/}
-            {/*                    to={node.slug}*/}
-            {/*                    css={css`*/}
-            {/*                            text-decoration: none;*/}
-            {/*                            color: #000000;*/}
-            {/*                        `}*/}
-            {/*                >*/}
-            {/*                    <section>*/}
-            {/*                        <h4*/}
-            {/*                            css={css`*/}
-            {/*                                    font-size: 1.1em;*/}
-            {/*                                    color: var(--brand-color);*/}
-            {/*                                    font-weight: bolder;*/}
-            {/*                                `}>*/}
-            {/*                            {node.title}*/}
-            {/*                        </h4>*/}
-            {/*                        <p css={css`grid-area: cardExcerpt`} dangerouslySetInnerHTML={{ __html: node.excerpt }} />*/}
-            {/*                    </section>*/}
-            {/*                </Link>*/}
-            {/*            </article>*/}
-            {/*        ))}*/}
-            {/*    </section>*/}
+            <h2 css={css`padding-bottom: 2rem`}>From Tips & Tricks to Inspiration and everything in between. Our blog
+                articles help you make the most out of your dry erase surfaces.</h2>
+            <section
+                css={css`
+                          display: flex;
+                          flex-flow: row wrap;
+                          justify-content: center;
+                          @media only screen and (min-width: 1120px) {
+                            justify-content: space-between;
+                          }
+                        `}
+            >
+                {data.allWordpressPost.edges.map(({node}) => (
+                    <article
+                        key={node.id}
+                        css={css`
+                                    border: 4px solid var(--alt-brand-color);
+                                    border-radius: .75rem;
+                                    max-width: calc(300px + 1rem);
+                                    padding: .5rem;
+                                    margin-top: 1.5rem;
+                                    box-shadow: var(--shadow-color) 3px 3px;
+                                `}
+                    >
+                        <Link
+                            to={node.slug}
+                            css={css`
+                                        text-decoration: none;
+                                        color: #000000;
+                                    `}
+                        >
+                            <section
+                                css={css`
+                                          display: grid; 
+                                          grid-template-areas:
+                                          "pic"
+                                          "heading"
+                                          ;
+                                        `}
+                            >
+                                <h4
+                                    css={css`
+                                                font-size: 1.1em;
+                                                color: var(--brand-color);
+                                                font-weight: bolder;
+                                                text-align: center;
+                                            `}>
+                                    {node.title.replace(/[&][N][b][s][p][;]/ig, " ")}
+                                </h4>
+                                <img
+                                    src={node.excerpt.replace(/(<([^>]+)>)/ig, "")}
+                                    alt="Blog preview image"
+                                    css={css`
+                                              width: 100%;
+                                              grid-area: pic;
+                                              justify-self: end;
+                                              margin-top: 0;
+                                              border-radius: .75rem;
+                                            `}
+                                />
+                            </section>
+                        </Link>
+                    </article>
+                ))}
+            </section>
         </section>
-        <InstaFeed/>
         <section
             css={css`
                 background-color: var(--alt-brand-color);
@@ -161,25 +182,25 @@ const Blog = ({data}) => (
     </Layout>
 );
 
-// export const query = graphql`
-//     query {
-//         allWordpressPost(
-//             sort: { fields: [date], order: DESC}
-//             )
-//         {
-//             edges {
-//                 node {
-//                     title
-//                     excerpt
-//                     slug
-//                     id
-//                     categories {
-//                         name
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// `
+export const query = graphql`
+    query {
+        allWordpressPost(
+            sort: { fields: [date], order: DESC}
+            )
+        {
+            edges {
+                node {
+                    title
+                    excerpt
+                    slug
+                    id
+                    categories {
+                        name
+                    }
+                }
+            }
+        }
+    }
+`;
 
 export default Blog

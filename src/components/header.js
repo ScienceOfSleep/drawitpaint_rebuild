@@ -250,7 +250,7 @@ const Header = () => {
                         <ListLink to="/features">Features</ListLink>
                         <ListLink to="/pastcustomers">Past Customers</ListLink>
                         <ListLink to="/shop">Shop</ListLink>
-                        {/*<ListLink to="/blog">Blog</ListLink>*/}
+                        <ListLink to="/blog">Blog</ListLink>
                         <ListLink to="/contact">Contact</ListLink>
                         <li
                             css={css`
