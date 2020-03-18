@@ -38,11 +38,12 @@ const Footer = () => {
           padding-bottom: 2rem;
           display: grid;
           grid-template-areas:
+          ". insta ."
           ". form ."
           ". social ."
           ". nav ."
           ;
-          grid-template-columns: 1fr auto 1fr;
+          grid-template-columns: 1fr 330px 1fr;
           @media only screen and (min-width: 1120px) {
             grid-template-areas:
             "insta insta insta insta insta"
